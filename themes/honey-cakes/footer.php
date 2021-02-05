@@ -11,19 +11,19 @@
 
 ?>
 
-	<footer id="colophon" class="site-footer">
+	<footer id="colophon" class="site-footer py-10 px-10 bg-yellow-200 text-center white-text shadow-lg">
 		<div class="site-info">
-			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'honey-cakes' ) ); ?>">
+			<a class="white-text" href="<?php echo esc_url( __( 'https://wordpress.org/', 'honey-cakes' ) ); ?>">
 				<?php
 				/* translators: %s: CMS name, i.e. WordPress. */
 				printf( esc_html__( 'Proudly powered by %s', 'honey-cakes' ), 'WordPress' );
 				
 				?>
 			</a>
-			<span class="sep"> <p class="text-purple-600 ...">hiiiiii</p>| </span>
+			<span class="sep white-text"> | </span>
 				<?php
 				/* translators: 1: Theme name, 2: Theme author. */
-				printf( esc_html__( 'Theme: %1$s by %2$s.', 'honey-cakes' ), 'honey-cakes', '<a href="https://mattfelton.com/">Matt Felton</a>' );
+				printf( esc_html__( 'Theme: %1$s by %2$s.', 'honey-cakes' ), 'honey-cakes', '<a class="white-text" href="https://mattfelton.com/">Matt Felton</a>' );
 				?>
 		</div><!-- .site-info -->
 	</footer><!-- #colophon -->
