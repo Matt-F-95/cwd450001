@@ -11,7 +11,7 @@
 
 ?>
 
-	<footer id="colophon" class="site-footer py-10 px-10 bg-yellow-200 text-center white-text shadow-lg">
+	<footer id="colophon" class="site-footer py-10 px-10 b-purple text-center text-white shadow-lg">
 		<div class="site-info">
 			<a class="white-text" href="<?php echo esc_url( __( 'https://wordpress.org/', 'honey-cakes' ) ); ?>">
 				<?php

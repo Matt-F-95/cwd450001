@@ -17,6 +17,8 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="profile" href="https://gmpg.org/xfn/11">
 	<script src="https://kit.fontawesome.com/374c297ca1.js" crossorigin="anonymous"></script>
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
 	<?php wp_head(); ?>
 </head>
 <body <?php body_class(); ?>>
@@ -25,13 +27,13 @@
 	<a class="skip-link screen-reader-text" href="#primary"><?php esc_html_e( 'Skip to content', 'honey-cakes' ); ?></a>
 
 	<header id="masthead" class="site-header">
-	<div class="topBar py-3 bg-pink-800 shadow-lg text-white px-5">
+	<div class="topBar py-3 b-purple shadow-lg text-white px-5">
 		<ul class="flex justify-between">
-			<li><i class="fas fa-phone-alt"></i> 1-(647) 297-5219</li>
+			<li><i class="fas fa-phone-alt"></i> 1-(647)-297-5219</li>
 			<li><a class="text-white" href="https://www.instagram.com/lena100sweet" target="_blank"><i class="fab fa-instagram text-xl px-2 text-white"></i></a><a href="https://www.facebook.com/LenaHoneyCakes/" target="_blank"><i class="fab fa-facebook text-xl px-2 text-white"></i></a></li>
 		</ul>
 		</div>
-		<div class="site-branding bg-yellow-200 divide-opacity-10 py-10 text-center shadow-2xl shadow-inner">
+		<div class="site-branding bg-yellow-100 py-10 text-center shadow-2xl shadow-inner">
 		
 			<?php
 			the_custom_logo();
@@ -50,9 +52,10 @@
 				<p class="site-description"><?php echo $honey_cakes_description; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?></p>
 			<?php endif; ?>
 		</div><!-- .site-branding -->
-
-		<nav id="site-navigation" class="main-navigation py-3 bg-pink-800 white-text text-center">
-			<button class="menu-toggle bg-pink-800 white-text text-white" aria-controls="primary-menu" aria-expanded="false"><i class="fas fa-bars py-3 px-3"><?php esc_html_e('', 'honey-cakes' ); ?></i></button>
+				
+		<nav id="site-navigation" class="main-navigation py-3 b-purple">
+			<button class="menu-toggle b-purple text-center text-white" aria-controls="primary-menu" aria-expanded="false"><i class="fas fa-bars py-3 px-3"><?php esc_html_e('', 'honey-cakes' ); ?></i></button>
+			<div class="container mx-auto">
 			<?php
 			wp_nav_menu(
 				array(
@@ -61,7 +64,9 @@
 				)
 			);
 			?>
+			</div>
 		</nav><!-- #site-navigation -->
+
 		
 		
 	</header><!-- #masthead -->

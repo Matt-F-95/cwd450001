@@ -14,7 +14,7 @@
 
 get_header();
 ?>
-
+	<div class="container mx-auto b-white px-10 py-10">
 	<main id="primary" class="site-main">
 
 		<?php
@@ -32,7 +32,7 @@ get_header();
 		?>
 
 	</main><!-- #main -->
-
+		</div>
 <?php
 get_sidebar();
 get_footer();
