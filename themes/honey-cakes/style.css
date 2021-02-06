@@ -1173,3 +1173,63 @@ tr:nth-child(even):hover {
 	font-style: italic;
 }
 
+.wp-block-search .wp-block-search__input {
+	flex-grow: 0;
+	border: 1px solid #594059;
+}
+
+.wp-block-calendar {
+	background:#252525;
+	color: #f2f2f2;
+	border-radius: 1em;
+}
+
+.wp-calendar-table caption {
+	color: #f2f2f2 !important;
+	padding: 20px;
+}
+
+.page-links {
+	color: #252525;
+	font-style: italic;
+}
+
+.notice-error {
+	background: #252525;
+	color: red;
+	padding: 20px;
+	border-radius: 1em;
+	margin: 2em 0em 2em 0em;
+}
+
+.wp-block-latest-comments__comment-meta {
+	background:#252525;
+	color: #f2f2f2;
+	border-radius: 1em;
+	padding: 20px;
+	font-family: 'Source Sans Pro', sans-serif;
+}
+
+.wp-block-latest-comments__comment-author {
+	color: #f29544;
+	
+}
+.wp-block-latest-comments__comment-author:hover {
+	color: #f2f2f2;
+	transition: .5s;
+}
+
+.wp-block-latest-comments__comment-link {
+	color: #f29544;
+	
+}
+.wp-block-latest-comments__comment-link:hover {
+	color: #f2f2f2;
+	transition: .5s;
+	
+}
+
+.wp-block-latest-comments__comment-date {
+	font-style: italic;
+	text-align: right;
+}
