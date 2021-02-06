@@ -968,8 +968,95 @@ textarea {
 	margin-bottom: 1.5em;
 }
 
-
 body {
-	background: #F1E4D1;
+	background:#f2f2f2;
+}
+
+/* BAKERY COLORS */
+
+.b-purple {
+	background: #594059;
+}
+
+.f-purple {
+	color: #594059;
+}
+
+.b-orange {
+	background: #F29544;
+}
+
+.f-orange {
+	color: #F29544;
+}
+
+.b-brown {
+	background: #A66953;
+}
+
+.f-brown {
+	color: #A66953;
+}
+
+.b-white {
+	background: #f2f2f2;
+}
+
+.f-white {
+	color: #f2f2f2;
+}
+
+.b-black {
+	background: #0d0d0d;
+}
+
+.f-black {
+	color: #0d0d0d;
+}
+
+/*********************/
+
+.main-navigation a {
+	color: #fff;
+	padding: 10px;
+}
+
+.main-navigation a:hover {
+	color: #F29544;
+}
+
+/* BLOCK STYLING */
+
+.entry-title {
+	color: #0d0d0d;
+	font-size: 32px;
+	text-align: center;
+	font-family: 'Source Sans Pro', sans-serif;
+}
+
+.wp-block-image {
+	max-width:50%;
+	height: auto;
+	border: 2px solid #594059;
+}
+
+.wp-caption {
+	color: pink;
+}
+
+.wp-block-quote {
+	margin: 20px;
+}
+
+.wp-block-quote p {
+	color: #252525;
+	font-weight: bolder;
+	border-left: 2px solid #f29544;
+	padding:20px;
+	margin-right: 5px;
+}
+
+.wp-block-quote cite {
+	color: gray;
 }
 
