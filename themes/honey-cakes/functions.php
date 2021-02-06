@@ -141,9 +141,9 @@ add_action( 'widgets_init', 'honey_cakes_widgets_init' );
  */
 function honey_cakes_scripts() {
 	wp_enqueue_style( 'honey-cakes-style', get_stylesheet_uri(), array(), _S_VERSION );
-	
 	wp_style_add_data( 'honey-cakes-style', 'rtl', 'replace' );
 	wp_enqueue_style( 'tailwind-style', get_template_directory_uri() . '/assets/css/tailwind.css' );
+	wp_enqueue_style( 'custom-style', get_template_directory_uri() . '/assets/css/custom.css' );
 	wp_enqueue_script( 'honey-cakes-navigation', get_template_directory_uri() . '/js/navigation.js', array(), _S_VERSION, true );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
