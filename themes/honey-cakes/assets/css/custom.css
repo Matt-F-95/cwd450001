@@ -263,3 +263,15 @@ tr:nth-child(even):hover {
 	font-style: italic;
 	text-align: right;
 }
+
+
+.wp-block-media-text__media img, .wp-block-media-text__media video {
+    max-width:75%;
+    height: auto;
+    border-radius: 1em;
+    
+}
+
+.home h1.entry-title {
+	display: none;
+  }

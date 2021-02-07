@@ -51,7 +51,26 @@
 				?>
 				<p class="site-description"><?php echo $honey_cakes_description; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?></p>
 			<?php endif; ?>
+			<header class="entry-header">
+		<?php
+		if ( is_singular() ) :
+			the_title( '<h1 class="entry-title">', '</h1>' );
+		else :
+			the_title( '<h2 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' );
+		endif;
+
+		if ( 'post' === get_post_type() ) :
+			?>
+			<div class="entry-meta">
+				<?php
+				honey_cakes_posted_on();
+				honey_cakes_posted_by();
+				?>
+			</div><!-- .entry-meta -->
+		<?php endif; ?>
+	</header><!-- .entry-header -->
 		</div><!-- .site-branding -->
+		
 				
 		<nav id="site-navigation" class="main-navigation py-3 b-purple">
 			<button class="menu-toggle b-purple text-center text-white" aria-controls="primary-menu" aria-expanded="false"><i class="fas fa-bars py-3 px-3"><?php esc_html_e('', 'honey-cakes' ); ?></i></button>
