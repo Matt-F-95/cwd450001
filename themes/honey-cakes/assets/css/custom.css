@@ -272,6 +272,15 @@ tr:nth-child(even):hover {
     
 }
 
-.home h1.entry-title {
-	display: none;
-  }
+.site-branding {
+	height: 40vh;
+}
+
+.site-branding img {
+	width: 100%;
+	height:auto;
+}
+
+.entry-title {
+	font-family: 'Source Sans Pro', sans-serif;
+}
