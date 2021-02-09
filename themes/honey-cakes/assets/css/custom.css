@@ -283,4 +283,22 @@ tr:nth-child(even):hover {
 
 .entry-title {
 	font-family: 'Source Sans Pro', sans-serif;
+	margin-bottom: 2em;
 }
+
+#forminator-module-68 {
+	width: 50%;
+	margin: 0 auto;
+}
+
+.wp-block-media-text__content p {
+	font-size: 18px;
+	line-height: 1.55em;
+	margin-bottom: 0.45em;
+}
+.wp-block-media-text__content .has-large-font-size {
+	font-size: 32px;
+	line-height: 1.55em;
+	margin-bottom: 1em;
+}
+
