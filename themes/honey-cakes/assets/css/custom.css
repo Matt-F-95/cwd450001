@@ -325,7 +325,7 @@ tr:nth-child(even):hover {
 		width: 100%;
 		margin: 0 auto;
 	}
-  }
+}
 
 .wp-block-media-text__content p {
 	font-size: 18px;
@@ -390,4 +390,56 @@ tr:nth-child(even):hover {
 
 .menu-toggle {
 	margin-left: 1em;
+}
+
+.wp-caption .wp-caption-text,
+.gallery-caption {
+	padding: 0.8075em 1em;
+	font-size: 14px;
+	font-size: 1.4rem;
+	font-family: 'Lato', sans-serif;
+	background: #e5e5e5;
+	background: hsl(0, 0%, 90%);
+}
+
+.site-main .wp-block-gallery {
+	margin-bottom: 1.5em;
+}
+
+.site-main .wp-block-gallery {
+	position: relative;
+	max-width: 100%;
+	float: left;
+	margin-right: 3.333333333%;
+	margin-bottom: 3rem;
+	background: #333;
+	overflow: hidden;
+}
+
+.site-main .gallery a img {
+	max-width: 100%;
+	height: auto;
+	display: block;
+	margin: 0 auto;
+	border: none;
+}
+
+.blocks-gallery-caption {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	max-height: 50%;
+	width: 100%;
+	padding: 6px 8px;
+	margin: 0;
+	font-size: 12px;
+	line-height: 1.5;
+	color: #fff;
+	text-align: left;
+	background-color: hsla(0, 0%, 0%, .8);
+	opacity: 0;
+}
+
+.wp-block-gallery .blocks-gallery-item:hover .gallery-caption {
+	opacity: 1;
 }
