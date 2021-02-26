@@ -197,6 +197,32 @@ function honeycakes_widgets_footer_product_init() {
 
 add_action( 'widgets_init', 'honeycakes_widgets_footer_product_init' );
 
+function honeycakes_widgets_top_bar_init() {
+	
+	register_sidebar( array(
+		'name' => 'Top Bar Widget Area 1',
+		'id' => 'top_bar_widget_area',
+		'before_widget' => '<div>',
+		'after_widget' => '</div>',
+	));
+
+}
+
+add_action( 'widgets_init', 'honeycakes_widgets_top_bar_init' );
+
+function honeycakes_widgets_top_bar_social_init() {
+	
+	register_sidebar( array(
+		'name' => 'Top Bar Widget Area 2',
+		'id' => 'top_bar_widget_area_2',
+		'before_widget' => '<div>',
+		'after_widget' => '</div>',
+	));
+
+}
+
+add_action( 'widgets_init', 'honeycakes_widgets_top_bar_social_init' );
+
 
 
 function honeycakes_register_menu() {

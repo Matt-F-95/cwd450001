@@ -29,8 +29,8 @@
 	<header id="masthead" class="site-header">
 	<div class="topBar py-3 b-purple shadow-lg text-white px-5">
 		<ul class="flex justify-between">
-			<li><i class="fas fa-phone-alt"></i> 1-(647)-297-5219</li>
-			<li><a class="text-white" href="https://www.instagram.com/lena100sweet" target="_blank"><i class="fab fa-instagram text-xl px-2 text-white"></i></a><a href="https://www.facebook.com/LenaHoneyCakes/" target="_blank"><i class="fab fa-facebook text-xl px-2 text-white"></i></a></li>
+		<?php if( dynamic_sidebar('top_bar_widget_area') ) : else : endif; ?>
+		<?php if( dynamic_sidebar('top_bar_widget_area_2') ) : else : endif; ?>
 		</ul>
 		</div>
 		<div class="site-branding bg-yellow-100 py-10 text-center shadow-2xl shadow-inner">
