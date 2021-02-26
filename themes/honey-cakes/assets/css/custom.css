@@ -1,3 +1,16 @@
+/***** HONEYCAKES THEME CUSTOM STYLING *****
+*
+*	01 - HOUSEKEEPING
+*	02 - BAKERY COLOUR PALETTE
+*	03 - BLOCK STYLING
+*	04 - WIDGET STYLING
+*	05 - MEDIA QUERIES
+*
+
+/******************************************/
+
+/* 01 - HOUSEKEEPING */
+
 body {
 	background: #f2f2f2;
 }
@@ -27,7 +40,7 @@ h6 {
 	font-size: 1em;
 }
 
-/* BAKERY COLORS */
+/* 02 - BAKERY COLORS */
 
 .b-purple {
 	background: #594059;
@@ -80,7 +93,7 @@ h6 {
 	color: #F29544;
 }
 
-/* BLOCK STYLING */
+/* 03 - BLOCK STYLING */
 
 .entry-title {
 	color: #0d0d0d;
@@ -320,12 +333,7 @@ tr:nth-child(even):hover {
 	margin: 0 auto;
 }
 
-@media only screen and (max-width: 800px) {
-	#forminator-module-68 {
-		width: 100%;
-		margin: 0 auto;
-	}
-}
+
 
 .wp-block-media-text__content p {
 	font-size: 18px;
@@ -443,3 +451,58 @@ tr:nth-child(even):hover {
 .wp-block-gallery .blocks-gallery-item:hover .gallery-caption {
 	opacity: 1;
 }
+
+
+
+
+/***********************/
+
+/* 04 - WIDGET STYLING */
+
+#shopFooter {
+	margin-top: 40vh;
+}
+
+.footer-widget-title, .footer-widget-title-2, .footer-widget-title-3  {
+	color: #634661;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	padding: 10px;
+}
+
+.product-categories a {
+	color: #252525;
+	font-size: 1.15rem;
+}
+.product-categories a:hover {
+	color: #594059;
+	font-size: 1.25rem;
+	
+}
+
+#menu-footer-menu li {
+	font-size: 1.25rem;
+	color: #252525;
+	text-transform: capitalize;
+}
+
+
+/*********************/
+
+
+/* 05 - MEDIA QUERIES */
+
+@media only screen and (max-width: 800px) {
+	#forminator-module-68 {
+		width: 100%;
+		margin: 0 auto;
+	}
+
+	/* centers image widget(logo) on smaller screens when in column versus row */
+	.wp-image-26 {
+		margin: 0 auto;
+	}
+}
+
+
+/*******************/

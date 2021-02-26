@@ -182,6 +182,21 @@ function honeycakes_widgets_footer_init() {
 
 add_action( 'widgets_init', 'honeycakes_widgets_footer_init' );
 
+function honeycakes_widgets_footer_product_init() {
+	
+	register_sidebar( array(
+		'name' => 'Footer Widget Area 3',
+		'id' => 'footer_widget_area_3',
+		'before_widget' => '<div>',
+		'after_widget' => '</div>',
+		'before_title' => '<h3 class="footer-widget-title-3">',
+		'after_title' => '</h3>',
+	));
+
+}
+
+add_action( 'widgets_init', 'honeycakes_widgets_footer_product_init' );
+
 
 
 function honeycakes_register_menu() {

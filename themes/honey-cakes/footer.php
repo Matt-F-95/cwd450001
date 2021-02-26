@@ -12,15 +12,9 @@
 ?>
 
 
-	<!-- <footer id="colophon" class="site-footer b-purple">
-		<div class="site-info">
-	
-		</div><!-- .site-info 
-	</footer> -->
-
 	
 
-	<div class="flex flex-col align-center text-center sm:flex-row bg-yellow-100 shadow-2xl shadow-inner px-5 py-5 text-black">
+	<div id="shopFooter" class="flex flex-col align-center text-center sm:flex-row bg-yellow-100 shadow-2xl shadow-inner px-5 py-5 text-black">
 	<div class="flex-1">
 	<?php if( dynamic_sidebar('footer_widget_area_2') ) : else : endif; ?>
 	</div>
@@ -29,12 +23,12 @@
 	<?php if( dynamic_sidebar('footer_widget_area') ) : else : endif; ?>
 	</div>
 	<div class="flex-1">
-	<h2 class="text-2xl py-2">Shop</h2>
+	<h2 class="text-2xl py-2 footer-widget-title-2">Shop</h2>
 	<?php wp_nav_menu( array( 'theme_location' => 'footer-menu' ) ); ?>
 	</div>
 	<div class="flex-1">
-	<!-- add links here -->
-	
+	<!-- product categories? -->
+	<?php if( dynamic_sidebar('footer_widget_area_3') ) : else : endif; ?>
 	</div>
 	</div>
 	<div class="flex b-purple py-5 justify-center text-white">
