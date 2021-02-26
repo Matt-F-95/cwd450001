@@ -152,6 +152,44 @@ function honey_cakes_scripts() {
 }
 add_action( 'wp_enqueue_scripts', 'honey_cakes_scripts' );
 
+function honeycakes_widgets_init() {
+	
+	register_sidebar( array(
+		'name' => 'Footer Widget Area 1',
+		'id' => 'footer_widget_area',
+		'before_widget' => '<div>',
+		'after_widget' => '</div>',
+		'before_title' => '<h3 class="footer-widget-title">',
+		'after_title' => '</h3>',
+	));
+
+}
+
+add_action( 'widgets_init', 'honeycakes_widgets_init' );
+
+function honeycakes_widgets_footer_init() {
+	
+	register_sidebar( array(
+		'name' => 'Footer Widget Area 2',
+		'id' => 'footer_widget_area_2',
+		'before_widget' => '<div>',
+		'after_widget' => '</div>',
+		'before_title' => '<h3 class="footer-widget-title-2">',
+		'after_title' => '</h3>',
+	));
+
+}
+
+add_action( 'widgets_init', 'honeycakes_widgets_footer_init' );
+
+
+
+function honeycakes_register_menu() {
+	register_nav_menu('footer-menu', __('Footer Menu'));
+}
+
+add_action('init', ('honeycakes_register_menu'));
+
 /**
  * Implement the Custom Header feature.
  */
