@@ -20,7 +20,7 @@ function honey_cakes_woocommerce_setup() {
 	add_theme_support(
 		'woocommerce',
 		array(
-			'thumbnail_image_width' => 150,
+			'thumbnail_image_width' => 200,
 			'single_image_width'    => 300,
 			'product_grid'          => array(
 				'default_rows'    => 3,
@@ -118,7 +118,7 @@ if ( ! function_exists( 'honey_cakes_woocommerce_wrapper_before' ) ) {
 	 */
 	function honey_cakes_woocommerce_wrapper_before() {
 		?>
-			<main id="primary" class="site-main">
+			<main id="primary" class="site-main container mx-auto bg-blue-600">
 		<?php
 	}
 }

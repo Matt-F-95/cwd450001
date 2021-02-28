@@ -473,10 +473,9 @@ tr:nth-child(even):hover {
 
 .product-categories a {
 	color: #252525;
-	font-size: 1.15rem;
 }
 .product-categories a:hover {
-	color: #594059;
+	color: #f29544;
 	font-size: 1.25rem;
 	
 }
@@ -486,6 +485,12 @@ tr:nth-child(even):hover {
 	color: #252525;
 	text-transform: capitalize;
 }
+
+a:hover, a:focus, a:active {
+	color: #f29544;
+}
+
+
 
 /*********************/
 
@@ -520,9 +525,6 @@ h1 {
 	text-align:center;
 }
 
-a:hover, a:focus, a:active {
-	color: #f29544;
-}
 
 .woocommerce-breadcrumb {
 	font-size: 1.15rem;
@@ -530,6 +532,22 @@ a:hover, a:focus, a:active {
 	padding: 30px;
 }
 
+.onsale {
+	background: #f29544;
+	padding: 10px;
+	border-radius: 50%;
+	color: #fff;
+	z-index: 9999;
+}
 
+.product-category {
+	margin: 0 auto;
+	padding: 30px;
+}
+
+.single-product div.product {
+	width: 70%;
+	margin: 0 auto;
+}
 
 /*******************/
