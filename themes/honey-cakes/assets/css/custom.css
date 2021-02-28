@@ -95,9 +95,8 @@ h6 {
 }
 
 
-/* 04 - WIDGET STYLING */
+footer {
 
-#shopFooter {
 	margin-top: 60vh;
 }
 
@@ -141,6 +140,29 @@ a:hover, a:focus, a:active {
 	#forminator-module-68 {
 		width: 100%;
 		margin: 0 auto;
+	}
+
+	.custom-logo {
+		width: 320px;
+		height: auto;
+	}
+
+	/* centers image widget(logo) on smaller screens when in column versus row */
+	.wp-image-26 {
+		margin: 0 auto;
+	}
+}
+
+@media only screen and (max-width: 400px) {
+	#forminator-module-68 {
+		width: 100%;
+		margin: 0 auto;
+	}
+
+	.site-branding img {
+		width: 200px;
+		height: auto;
+		
 	}
 
 	/* centers image widget(logo) on smaller screens when in column versus row */
