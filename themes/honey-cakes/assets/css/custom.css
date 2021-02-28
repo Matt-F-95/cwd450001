@@ -5,6 +5,7 @@
 *	03 - BLOCK STYLING
 *	04 - WIDGET STYLING
 *	05 - MEDIA QUERIES
+*	06 - WOOCOMMERCE CUSTOM STYLING
 *
 
 /******************************************/
@@ -486,8 +487,8 @@ tr:nth-child(even):hover {
 	text-transform: capitalize;
 }
 
-
 /*********************/
+
 
 
 /* 05 - MEDIA QUERIES */
@@ -503,6 +504,32 @@ tr:nth-child(even):hover {
 		margin: 0 auto;
 	}
 }
+
+
+/*******************/
+
+
+/* 06. WOOCOMMERCE CUSTOM STYLING */
+
+
+.wc-block-grid__products {
+	justify-content: center;
+}
+
+h1 {
+	text-align:center;
+}
+
+a:hover, a:focus, a:active {
+	color: #f29544;
+}
+
+.woocommerce-breadcrumb {
+	font-size: 1.15rem;
+	text-align: left;
+	padding: 30px;
+}
+
 
 
 /*******************/

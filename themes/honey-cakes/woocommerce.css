@@ -565,3 +565,12 @@ p.no-comments {
 .widget_price_filter .ui-slider-horizontal .ui-slider-range {
 	height: 100%;
 }
+
+
+.wc-block-grid__products {
+	justify-content: center;
+}
+
+.woocommerce-products-header__title h1 {
+	color: red;
+}
