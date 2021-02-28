@@ -224,6 +224,15 @@ function honeycakes_widgets_top_bar_social_init() {
 add_action( 'widgets_init', 'honeycakes_widgets_top_bar_social_init' );
 
 
+function honeycakes_enqueue_block_assets() {
+	wp_enqueue_style(
+	'blocks-style',
+	get_template_directory_uri() . '/assets/css/blocks.css'
+);
+}
+
+add_action( 'enqueue_block_assets', 'honeycakes_enqueue_block_assets' );
+
 
 function honeycakes_register_menu() {
 	register_nav_menu('footer-menu', __('Footer Menu'));
