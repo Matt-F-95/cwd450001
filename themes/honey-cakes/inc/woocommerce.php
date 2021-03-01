@@ -37,6 +37,7 @@ function honey_cakes_woocommerce_setup() {
 }
 add_action( 'after_setup_theme', 'honey_cakes_woocommerce_setup' );
 
+
 /**
  * WooCommerce specific scripts & stylesheets.
  *

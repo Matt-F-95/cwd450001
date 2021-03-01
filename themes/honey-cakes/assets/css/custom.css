@@ -211,6 +211,29 @@ h1 {
 	padding: 30px;
 }
 
+.product_title {
+	color: #594059;
+	font-weight: bolder;
+	font-family: cursive;
+}
+
+.description_tab {
+	font-weight: bold;
+	padding: 10px;
+
+}
+
+.active {
+	color: #f29544;
+	
+}
+
+.reviews_tab {
+	padding: 10px;
+	font-weight: bold;
+
+}
+
 .onsale {
 	background: #f29544;
 	padding: 10px;
@@ -226,7 +249,7 @@ h1 {
 
 .tabs {
 	display: flex;
-	
+	justify-content: center;
 	
 }
 
@@ -239,9 +262,45 @@ h1 {
 	background:blue;
 }
 
-.tab-reviews {
+.woocommerce-tabs .tab-reviews {
 	padding: 10px;
 	background:red;
+}
+
+.woocommerce-tabs .wc-tabs {
+	border-radius: 0.55em;
+	background: lightgray;
+	width: 70vh;
+}
+
+.star-rating {
+	margin: 0 auto;
+}
+
+
+.price {
+	text-align:center;
+	font-weight: bold;
+}
+.woocommerce-product-details__short-description {
+	color: red;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.product_meta {
+	font-weight: bold;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.product_meta .posted_in a {
+	color: #F29544;
+	
+}
+
+.product_meta .tagged_as a {
+	color: #f29544;
 }
 
 .single-product div.product {
