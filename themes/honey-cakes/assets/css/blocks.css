@@ -357,7 +357,71 @@ tr:nth-child(even):hover {
 	opacity: 1;
 }
 
+.entry-meta {
+    text-align: center;
+    font-weight: 600;
+}
 
+.entry-content {
+    margin: 0 auto;
+    
+}
 
+.entry-content ul li {
+    list-style-type: disc;
+}
 
+.entry-title {
+    margin-top: 2em;
+}
+
+.single-post .entry-content {
+    margin: 0 auto;
+    width: 70vw;
+}
+
+.single-post .comment-reply-title {
+    width: 70vw;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.single-post .cat-links {
+    display: flex;
+    justify-content: right;
+    font-weight: 600;
+    margin: 0 auto;
+    width: 70vw;
+}
+
+.single-post .post-edit-link {
+    display: flex;
+    justify-content: right;
+    font-weight: 600;
+    margin: 0 auto;
+    width: 70vw;
+}
+
+.single-post .logged-in-as {
+    width: 70vw;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.single-post .cat-links a {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.blog .entry-content {
+    width: 70vw;
+    margin: 0 auto;
+    max-height: 40vh;
+   
+}
+
+.blog .cat-links {
+    text-align: center;
+    color: red;
+}
 /***********************/

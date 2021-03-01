@@ -96,7 +96,6 @@ h6 {
 
 
 footer {
-
 	margin-top: 60vh;
 }
 
@@ -147,6 +146,14 @@ a:hover, a:focus, a:active {
 		height: auto;
 	}
 
+	
+
+	#site-navigation a {
+		text-align: center;
+		font-size: 1.35em;
+	}
+
+
 	/* centers image widget(logo) on smaller screens when in column versus row */
 	.wp-image-26 {
 		margin: 0 auto;
@@ -163,6 +170,11 @@ a:hover, a:focus, a:active {
 		width: 200px;
 		height: auto;
 		
+	}
+
+	#site-navigation a {
+		text-align: center;
+		font-size: 1.35em;
 	}
 
 	/* centers image widget(logo) on smaller screens when in column versus row */

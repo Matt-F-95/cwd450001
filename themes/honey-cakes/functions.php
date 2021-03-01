@@ -240,6 +240,17 @@ function honeycakes_register_menu() {
 
 add_action('init', ('honeycakes_register_menu'));
 
+function example_add_post_class_to_single_post( $classes ) {
+
+	if ( is_single() ) {
+		array_push( $classes, 'single-post' );
+	} // end if
+
+	return $classes;
+
+}
+add_filter( 'post_class', 'example_add_post_class_to_single_post' );
+
 /**
  * Implement the Custom Header feature.
  */
