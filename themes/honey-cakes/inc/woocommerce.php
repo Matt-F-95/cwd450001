@@ -39,6 +39,8 @@ add_action( 'after_setup_theme', 'honey_cakes_woocommerce_setup' );
 
 remove_action( 'woocommerce_before_single_product_summary', 'woocommerce_show_product_sale_flash', 10 );
 
+remove_action( 'woocommerce_before_shop_loop', 'woocommerce_catalog_ordering', 30 );
+add_action( 'woocommerce_before_shop_loop', 'woocommerce_catalog_ordering', 5 );
 
 
 /* removes price action hook and then re-adds in new position in hierachy */

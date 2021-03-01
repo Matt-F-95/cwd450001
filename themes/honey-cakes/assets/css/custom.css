@@ -244,10 +244,6 @@ h1 {
 	
 }
 
-.size-woocommerce_thumbnail {
-	margin-top: -20px;
-	z-index: -1;
-}
 
 
 
@@ -312,7 +308,18 @@ h1 {
 	.single_add_to_cart_button {
 		background: #252525;
 		padding: 10px;
-		color: #f2f2f2;
+		color: #f29544;
+	}
+
+	.add_to_cart_button {
+		color: #f29544;
+		
+		
+
+	}
+
+	.woocommerce-products-header__title {
+		padding: 20px;
 	}
 
 .product_meta {
