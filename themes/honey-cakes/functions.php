@@ -251,6 +251,12 @@ function example_add_post_class_to_single_post( $classes ) {
 }
 add_filter( 'post_class', 'example_add_post_class_to_single_post' );
 
+function wpdocs_custom_excerpt_length( $length ) {
+	return 75;
+ }
+ add_filter( 'excerpt_length', 'wpdocs_custom_excerpt_length', 999 );
+  
+
 /**
  * Implement the Custom Header feature.
  */
