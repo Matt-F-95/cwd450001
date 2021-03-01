@@ -429,6 +429,17 @@ ul.products li.product .button:hover {
 	border-radius: 2px;
 }
 
+.submit {
+	background-color: #252525 !important;
+	color: #f29544 !important;
+	padding: 10px;
+	border-radius: 2px;
+	width: 100%;
+}
+.submit:hover {
+	color: #f2f2f2 !important;
+}
+
 .entry-summary {
 	display: grid;
 	padding: 10px;

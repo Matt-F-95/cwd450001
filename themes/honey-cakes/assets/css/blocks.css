@@ -463,7 +463,37 @@ tr:nth-child(even):hover {
     visibility: visible;
 }
 
+.single-post .entry-footer {
+    display: none;
+}
+
+.nav-previous {
+    padding: 30px;
+    font-weight: bolder;
+}
+
+.nav-next {
+    padding: 30px;
+    font-weight: bolder;
+}
+
+.single-post #comments {
+    text-align:center;
+    padding: 10px;
+}
+
+.single-post .reply {
+    margin-bottom: 20px;
+}
+.single-post .avatar {
+    margin: 20px auto;
+}
+
 /* blog page styling */
+
+.blog .entry-footer {
+    display: none;
+}
 
 .blog .entry-content {
     width: 70vw;
