@@ -1496,7 +1496,7 @@ class Forminator_CForm_Front_Action extends Forminator_Front_Action {
 		$response  = array();
 		$post_data = $this->get_post_data();
 
-		if ( isset( $post_data['nonce'] ) && ! wp_verify_nonce( $post_data['nonce'], 'forminator_submit_form' ) ) {
+		if ( ! isset( $post_data['nonce'] ) || ! wp_verify_nonce( $post_data['nonce'], 'forminator_submit_form' ) ) {
 			wp_send_json_error( new WP_Error( 'invalid_code' ) );
 		}
 		$form_id = isset( $post_data['form_id'] ) ? sanitize_text_field( $post_data['form_id'] ) : false; // WPCS: CSRF OK

@@ -1334,7 +1334,7 @@ class Forminator_QForm_Front extends Forminator_Render_Form {
 	 * @return void
 	 */
 	public static function ajax_reload_module() {
-		if ( isset( $_REQUEST['nonce'] ) && ! wp_verify_nonce( $_REQUEST['nonce'], 'forminator_submit_form' ) ) {
+		if ( ! isset( $_REQUEST['nonce'] ) || ! wp_verify_nonce( $_REQUEST['nonce'], 'forminator_submit_form' ) ) {
 			wp_send_json_error( new WP_Error( 'invalid_code' ) );
 		}
 

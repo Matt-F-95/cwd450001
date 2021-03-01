@@ -20,7 +20,7 @@ function honey_cakes_woocommerce_setup() {
 	add_theme_support(
 		'woocommerce',
 		array(
-			'thumbnail_image_width' => 150,
+			'thumbnail_image_width' => 200,
 			'single_image_width'    => 300,
 			'product_grid'          => array(
 				'default_rows'    => 3,
@@ -92,8 +92,8 @@ add_filter( 'body_class', 'honey_cakes_woocommerce_active_body_class' );
  */
 function honey_cakes_woocommerce_related_products_args( $args ) {
 	$defaults = array(
-		'posts_per_page' => 3,
-		'columns'        => 3,
+		'posts_per_page' => 4,
+		'columns'        => 2,
 	);
 
 	$args = wp_parse_args( $defaults, $args );
@@ -118,7 +118,7 @@ if ( ! function_exists( 'honey_cakes_woocommerce_wrapper_before' ) ) {
 	 */
 	function honey_cakes_woocommerce_wrapper_before() {
 		?>
-			<main id="primary" class="site-main">
+			<main id="primary" class="site-main container mx-auto">
 		<?php
 	}
 }

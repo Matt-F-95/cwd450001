@@ -1,3 +1,17 @@
+/***** HONEYCAKES THEME CUSTOM STYLING *****
+*
+*	01 - HOUSEKEEPING
+*	02 - BAKERY COLOUR PALETTE
+*	03 - BLOCK STYLING (MOVED TO BLOCKS.CSS)
+*	04 - WIDGET STYLING
+*	05 - MEDIA QUERIES
+*	06 - WOOCOMMERCE CUSTOM STYLING
+*
+
+/******************************************/
+
+/* 01 - HOUSEKEEPING */
+
 body {
 	background: #f2f2f2;
 }
@@ -27,7 +41,7 @@ h6 {
 	font-size: 1em;
 }
 
-/* BAKERY COLORS */
+/* 02 - BAKERY COLORS */
 
 .b-purple {
 	background: #594059;
@@ -80,366 +94,150 @@ h6 {
 	color: #F29544;
 }
 
-/* BLOCK STYLING */
 
-.entry-title {
-	color: #0d0d0d;
-	font-size: 32px;
-	text-align: center;
-	font-family: 'Source Sans Pro', sans-serif;
+footer {
+
+	margin-top: 60vh;
 }
 
-.wp-block-image {
-	max-width: 50%;
-	height: auto;
-	border: 2px solid #594059;
-}
 
-.wp-caption {
-	color: pink;
-}
 
-.wp-block-quote {
-	margin: 20px;
-}
-
-.wp-block-quote p {
-	color: #252525;
-	font-weight: bolder;
-	border-left: 2px solid #f29544;
-	padding: 20px;
-	margin-right: 5px;
-}
-
-.wp-block-quote cite {
-	color: gray;
-}
-
-.wp-block-code {
-	color: #f29544;
-	background: #252525;
-	border-radius: 1em;
-}
-
-.wp-block-pullquote {
-	color: #0d0d0d;
-	margin: 1.5em;
-}
-
-.wp-block-pullquote cite {
-	color: #f29544;
-}
-
-.wp-block-pullquote:not(.is-style-solid-color) {
-	background: #f2f2f2;
-	border-radius: 1em;
-}
-
-.wp-block-table {
-	color: #f29544;
-	background: #252525;
-	border-radius: 1em;
-	padding: 20px;
-	margin: 5em 0em 5em 0em;
-}
-
-tr:nth-child(1) {
-	background: #f2f2f2;
-	color: #0d0d0d;
-	font-weight: bolder;
-
-}
-
-tr:nth-child(odd):hover {
-	background: #f2f2f2;
-	color: #0d0d0d;
-	transition: .5s;
-}
-
-tr:nth-child(even):hover {
-	background: #0d0d0d;
-	color: #f2f2f2;
-	transition: .5s;
-}
-
-.wp-block-table td {
-	border: 1px solid #f2f2f2;
+.footer-widget-title, .footer-widget-title-2, .footer-widget-title-3  {
+	color: #634661;
+	text-transform: uppercase;
+	letter-spacing: 1px;
 	padding: 10px;
 }
 
-.wp-block-table figcaption {
-	font-style: italic;
-	text-align: right;
-}
-
-.wp-block-verse {
-	padding: 50px;
-	font-style: italic;
-	font-family: monospace;
-	font-size: 1.55em;
-}
-
-.content-area ul li {
-	list-style-type: disc;
-	color: red;
-}
-
-.wp-block-cover {
-	margin-top: 5em;
-	margin-bottom: 5em;
-}
-
-.wp-block-embed figcaption {
-	text-align: left;
-	font-style: italic;
-	color: #594059;
-}
-
-.wp-block-media-text {
-	color: #0d0d0d;
-	font-family: 'Source Sans Pro', sans-serif;
-
-}
-
-.wp-block-media-text__media {
-	width: 100%;
-	height: auto;
-
-}
-
-.wp-block-video video {
-	width: 70%;
-	height: auto;
-	margin: 0 auto;
-}
-
-.wp-block-video figcaption {
-	color: #594059;
-	text-align: center;
-	font-style: italic;
-}
-
-.wp-block-button a {
-	background: #252525;
-	color: #f29544;
-}
-
-.wp-block-file {
-	color: #f29544;
-	font-style: italic;
-}
-
-.wp-block-search .wp-block-search__input {
-	flex-grow: 0;
-	border: 1px solid #594059;
-}
-
-.wp-block-calendar {
-	background: #252525;
-	color: #f2f2f2;
-	border-radius: 1em;
-}
-
-.wp-calendar-table caption {
-	color: #f2f2f2 !important;
-	padding: 20px;
-}
-
-.page-links {
+.product-categories a {
 	color: #252525;
-	font-style: italic;
 }
-
-.notice-error {
-	background: #252525;
-	color: red;
-	padding: 20px;
-	border-radius: 1em;
-	margin: 2em 0em 2em 0em;
-}
-
-.wp-block-latest-comments__comment-meta {
-	background: #252525;
-	color: #f2f2f2;
-	border-radius: 1em;
-	padding: 20px;
-	font-family: 'Source Sans Pro', sans-serif;
-}
-
-.wp-block-latest-comments__comment-author {
+.product-categories a:hover {
 	color: #f29544;
-
+	font-size: 1.25rem;
+	
 }
 
-.wp-block-latest-comments__comment-author:hover {
-	color: #f2f2f2;
-	transition: .5s;
+#menu-footer-menu li {
+	font-size: 1.25rem;
+	color: #252525;
+	text-transform: capitalize;
 }
 
-.wp-block-latest-comments__comment-link {
+a:hover, a:focus, a:active {
 	color: #f29544;
-
-}
-
-.wp-block-latest-comments__comment-link:hover {
-	color: #f2f2f2;
-	transition: .5s;
-
-}
-
-.wp-block-latest-comments__comment-date {
-	font-style: italic;
-	text-align: right;
 }
 
 
-.wp-block-media-text__media img,
-.wp-block-media-text__media video {
-	max-width: 75%;
-	height: auto;
-	border-radius: 1em;
 
-}
+/*********************/
 
-.site-branding {
-	height: 40vh;
-}
 
-.site-branding img {
-	width: 100%;
-	height: auto;
-}
 
-.entry-title {
-	font-family: 'Source Sans Pro', sans-serif;
-	margin-bottom: 2em;
-}
-
-#forminator-module-68 {
-	width: 50%;
-	margin: 0 auto;
-}
+/* 05 - MEDIA QUERIES */
 
 @media only screen and (max-width: 800px) {
 	#forminator-module-68 {
 		width: 100%;
 		margin: 0 auto;
 	}
+
+	.custom-logo {
+		width: 320px;
+		height: auto;
+	}
+
+	/* centers image widget(logo) on smaller screens when in column versus row */
+	.wp-image-26 {
+		margin: 0 auto;
+	}
 }
 
-.wp-block-media-text__content p {
-	font-size: 18px;
-	line-height: 1.55em;
-	margin-bottom: 0.45em;
+@media only screen and (max-width: 400px) {
+	#forminator-module-68 {
+		width: 100%;
+		margin: 0 auto;
+	}
+
+	.site-branding img {
+		width: 200px;
+		height: auto;
+		
+	}
+
+	/* centers image widget(logo) on smaller screens when in column versus row */
+	.wp-image-26 {
+		margin: 0 auto;
+	}
 }
 
-.wp-block-media-text__content .has-large-font-size {
-	font-size: 32px;
-	line-height: 1.55em;
-	margin-bottom: 1em;
+
+/*******************/
+
+
+/* 06. WOOCOMMERCE CUSTOM STYLING */
+
+
+.wc-block-grid__products {
+	justify-content: center;
 }
 
-.wp-block-cover__inner-container strong {
-	font-family: cursive;
-	font-size: 1.75em;
-	margin-bottom: 20px;
+h1 {
+	text-align:center;
 }
 
-.wp-block-cover__inner-container p {
-	font-family: 'Source Sans Pro', sans-serif;
-	font-size: 1.55em;
-	margin-bottom: 20px;
-}
 
-.wp-block-cover__inner-container .wp-block-button {
-	margin-top: 20px;
-	margin-bottom: 20px;
-}
-
-.wp-block-cover {
-	border-radius: 10px 10px 10px 10px;
-}
-
-.has-cyan-bluish-gray-background-color {
-	border-radius: 10px 10px 10px 10px !important;
-}
-
-.wp-block-media-text__content h1 {
-	font-size: 2em;
-}
-
-.wp-block-media-text__content h2 {
-	font-size: 1.75em;
-}
-
-.wp-block-media-text__content h3 {
-	font-size: 1.55em;
-}
-
-.wp-block-media-text__content h4 {
-	font-size: 1.35em;
-}
-
-.wp-block-media-text__content h5 {
-	font-size: 1.15em;
-}
-
-.wp-block-media-text__content h6 {
-	font-size: 1em;
-}
-
-.menu-toggle {
-	margin-left: 1em;
-}
-
-.wp-caption .wp-caption-text,
-.gallery-caption {
-	padding: 0.8075em 1em;
-	font-size: 14px;
-	font-size: 1.4rem;
-	font-family: 'Lato', sans-serif;
-	background: #e5e5e5;
-	background: hsl(0, 0%, 90%);
-}
-
-.site-main .wp-block-gallery {
-	margin-bottom: 1.5em;
-}
-
-.site-main .wp-block-gallery {
-	position: relative;
-	max-width: 100%;
-	float: left;
-	margin-right: 3.333333333%;
-	margin-bottom: 3rem;
-	background: #333;
-	overflow: hidden;
-}
-
-.site-main .gallery a img {
-	max-width: 100%;
-	height: auto;
-	display: block;
-	margin: 0 auto;
-	border: none;
-}
-
-.blocks-gallery-caption {
-	position: absolute;
-	bottom: 0;
-	left: 0;
-	max-height: 50%;
-	width: 100%;
-	padding: 6px 8px;
-	margin: 0;
-	font-size: 12px;
-	line-height: 1.5;
-	color: #fff;
+.woocommerce-breadcrumb {
+	font-size: 1.15rem;
 	text-align: left;
-	background-color: hsla(0, 0%, 0%, .8);
-	opacity: 0;
+	padding: 30px;
 }
 
-.wp-block-gallery .blocks-gallery-item:hover .gallery-caption {
-	opacity: 1;
+.onsale {
+	background: #f29544;
+	padding: 10px;
+	border-radius: 50%;
+	color: #fff;
+	z-index: 9999;
 }
+
+.product-category {
+	margin: 0 auto;
+	padding: 30px;
+}
+
+.tabs {
+	display: flex;
+	
+	
+}
+
+.tabs a {
+	padding: 10px;
+}
+
+.tab-description {
+	padding: 10px;
+	background:blue;
+}
+
+.tab-reviews {
+	padding: 10px;
+	background:red;
+}
+
+.single-product div.product {
+	width: 70%;
+	margin: 0 auto;
+}
+
+.page-content, .entry-content, .entry-summary {
+	display: grid;
+	padding: 20px;
+}
+
+.tabs .wc-tabs {
+	display: flex;
+}
+
+/*******************/

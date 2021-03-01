@@ -152,6 +152,94 @@ function honey_cakes_scripts() {
 }
 add_action( 'wp_enqueue_scripts', 'honey_cakes_scripts' );
 
+function honeycakes_widgets_init() {
+	
+	register_sidebar( array(
+		'name' => 'Footer Widget Area 1',
+		'id' => 'footer_widget_area',
+		'before_widget' => '<div>',
+		'after_widget' => '</div>',
+		'before_title' => '<h3 class="footer-widget-title">',
+		'after_title' => '</h3>',
+	));
+
+}
+
+add_action( 'widgets_init', 'honeycakes_widgets_init' );
+
+function honeycakes_widgets_footer_init() {
+	
+	register_sidebar( array(
+		'name' => 'Footer Widget Area 2',
+		'id' => 'footer_widget_area_2',
+		'before_widget' => '<div>',
+		'after_widget' => '</div>',
+		'before_title' => '<h3 class="footer-widget-title-2">',
+		'after_title' => '</h3>',
+	));
+
+}
+
+add_action( 'widgets_init', 'honeycakes_widgets_footer_init' );
+
+function honeycakes_widgets_footer_product_init() {
+	
+	register_sidebar( array(
+		'name' => 'Footer Widget Area 3',
+		'id' => 'footer_widget_area_3',
+		'before_widget' => '<div>',
+		'after_widget' => '</div>',
+		'before_title' => '<h3 class="footer-widget-title-3">',
+		'after_title' => '</h3>',
+	));
+
+}
+
+add_action( 'widgets_init', 'honeycakes_widgets_footer_product_init' );
+
+function honeycakes_widgets_top_bar_init() {
+	
+	register_sidebar( array(
+		'name' => 'Top Bar Widget Area 1',
+		'id' => 'top_bar_widget_area',
+		'before_widget' => '<div>',
+		'after_widget' => '</div>',
+	));
+
+}
+
+add_action( 'widgets_init', 'honeycakes_widgets_top_bar_init' );
+
+function honeycakes_widgets_top_bar_social_init() {
+	
+	register_sidebar( array(
+		'name' => 'Top Bar Widget Area 2',
+		'id' => 'top_bar_widget_area_2',
+		'before_widget' => '<div>',
+		'after_widget' => '</div>',
+	));
+
+}
+
+add_action( 'widgets_init', 'honeycakes_widgets_top_bar_social_init' );
+
+
+function honeycakes_enqueue_block_assets() {
+	wp_enqueue_style(
+	'blocks-style',
+	get_template_directory_uri() . '/assets/css/blocks.css'
+);
+}
+
+add_action( 'enqueue_block_assets', 'honeycakes_enqueue_block_assets' );
+
+
+function honeycakes_register_menu() {
+	register_nav_menu('footer-menu', __('Footer Menu'));
+}
+
+add_action('init', ('honeycakes_register_menu'));
+
 /**
  * Implement the Custom Header feature.
  */
