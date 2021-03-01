@@ -162,6 +162,8 @@ function honey_cakes_woocommerce_active_body_class( $classes ) {
 }
 add_filter( 'body_class', 'honey_cakes_woocommerce_active_body_class' );
 
+
+
 /**
  * Related Products Args.
  *
