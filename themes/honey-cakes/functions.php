@@ -240,6 +240,23 @@ function honeycakes_register_menu() {
 
 add_action('init', ('honeycakes_register_menu'));
 
+function example_add_post_class_to_single_post( $classes ) {
+
+	if ( is_single() ) {
+		array_push( $classes, 'single-post' );
+	} // end if
+
+	return $classes;
+
+}
+add_filter( 'post_class', 'example_add_post_class_to_single_post' );
+
+function wpdocs_custom_excerpt_length( $length ) {
+	return 75;
+ }
+ add_filter( 'excerpt_length', 'wpdocs_custom_excerpt_length', 999 );
+  
+
 /**
  * Implement the Custom Header feature.
  */

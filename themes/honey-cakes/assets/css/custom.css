@@ -94,11 +94,16 @@ h6 {
 	color: #F29544;
 }
 
-
+/* 
 footer {
-
 	margin-top: 60vh;
-}
+} */
+
+
+
+.site-main {
+	margin-bottom: 50vh;
+} 
 
 
 
@@ -147,6 +152,14 @@ a:hover, a:focus, a:active {
 		height: auto;
 	}
 
+	
+
+	#site-navigation a {
+		text-align: center;
+		font-size: 1.35em;
+	}
+
+
 	/* centers image widget(logo) on smaller screens when in column versus row */
 	.wp-image-26 {
 		margin: 0 auto;
@@ -163,6 +176,11 @@ a:hover, a:focus, a:active {
 		width: 200px;
 		height: auto;
 		
+	}
+
+	#site-navigation a {
+		text-align: center;
+		font-size: 1.35em;
 	}
 
 	/* centers image widget(logo) on smaller screens when in column versus row */
@@ -193,13 +211,41 @@ h1 {
 	padding: 30px;
 }
 
+.product_title {
+	color: #594059;
+	font-weight: bolder;
+	font-family: cursive;
+	text-align: left;
+}
+
+.description_tab {
+	font-weight: bold;
+	padding: 10px;
+
+}
+
+.active {
+	color: #f29544;
+	
+}
+
+.reviews_tab {
+	padding: 10px;
+	font-weight: bold;
+
+}
+
 .onsale {
 	background: #f29544;
-	padding: 10px;
+	padding: 20px;
 	border-radius: 50%;
 	color: #fff;
-	z-index: 9999;
+	z-index: 10;
+	
 }
+
+
+
 
 .product-category {
 	margin: 0 auto;
@@ -208,7 +254,7 @@ h1 {
 
 .tabs {
 	display: flex;
-	
+	justify-content: center;
 	
 }
 
@@ -221,9 +267,74 @@ h1 {
 	background:blue;
 }
 
-.tab-reviews {
+.woocommerce-tabs .tab-reviews {
 	padding: 10px;
 	background:red;
+}
+
+.woocommerce-tabs .wc-tabs {
+	border-radius: 0.55em;
+	background: lightgray;
+	width: 70vh;
+}
+
+
+
+
+.woocommerce-product-details__short-description {
+	
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+.single-product div.product form.cart .quantity {
+	float: none;
+	margin: 0;
+	display: inline-block;
+	
+	}
+
+	.minus {
+		background: #252525;
+		padding: 10px;
+		color: #f2f2f2;
+	}
+
+	.plus {
+		background: #252525;
+		padding: 10px;
+		color: #f2f2f2;
+	}
+
+	.single_add_to_cart_button {
+		background: #252525;
+		padding: 10px;
+		color: #f29544;
+	}
+
+	.add_to_cart_button {
+		color: #f29544;
+		
+		
+
+	}
+
+	.woocommerce-products-header__title {
+		padding: 20px;
+	}
+
+.product_meta {
+	font-weight: bold;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.product_meta .posted_in a {
+	color: #F29544;
+	
+}
+
+.product_meta .tagged_as a {
+	color: #f29544;
 }
 
 .single-product div.product {

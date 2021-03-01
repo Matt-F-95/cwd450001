@@ -12,9 +12,10 @@
 ?>
 
 
-	
+</div> <!-- pagecontent -->
+</div>
 	<footer>
-	<div id="shopFooter" class="flex flex-col align-center text-center sm:flex-row bg-yellow-100 shadow-2xl shadow-inner px-5 py-5 text-black">
+	<div class="flex flex-col align-center text-center sm:flex-row bg-yellow-100 shadow-2xl shadow-inner px-5 py-5 text-black">
 	<div class="flex-1">
 	<?php if( dynamic_sidebar('footer_widget_area_2') ) : else : endif; ?>
 	</div>
@@ -35,8 +36,8 @@
 	<small>Copyright &copy; 2021 Honey Cakes Bakery. All Rights Reserved.</small>
 	</div>
 </footer>
-</div><!-- #page -->
-<?php wp_footer(); ?>
 
+
+<?php wp_footer(); ?>
 </body>
 </html>
