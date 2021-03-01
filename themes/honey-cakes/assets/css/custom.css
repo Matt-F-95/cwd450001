@@ -215,6 +215,7 @@ h1 {
 	color: #594059;
 	font-weight: bolder;
 	font-family: cursive;
+	text-align: left;
 }
 
 .description_tab {
@@ -236,11 +237,19 @@ h1 {
 
 .onsale {
 	background: #f29544;
-	padding: 10px;
+	padding: 20px;
 	border-radius: 50%;
 	color: #fff;
-	z-index: 9999;
+	z-index: 10;
+	
 }
+
+.size-woocommerce_thumbnail {
+	margin-top: -20px;
+	z-index: -1;
+}
+
+
 
 .product-category {
 	margin: 0 auto;
@@ -285,6 +294,25 @@ h1 {
 	float: none;
 	margin: 0;
 	display: inline-block;
+	
+	}
+
+	.minus {
+		background: #252525;
+		padding: 10px;
+		color: #f2f2f2;
+	}
+
+	.plus {
+		background: #252525;
+		padding: 10px;
+		color: #f2f2f2;
+	}
+
+	.single_add_to_cart_button {
+		background: #252525;
+		padding: 10px;
+		color: #f2f2f2;
 	}
 
 .product_meta {

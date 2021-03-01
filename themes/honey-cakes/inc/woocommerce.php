@@ -37,6 +37,16 @@ function honey_cakes_woocommerce_setup() {
 }
 add_action( 'after_setup_theme', 'honey_cakes_woocommerce_setup' );
 
+remove_action( 'woocommerce_before_single_product_summary', 'woocommerce_show_product_sale_flash', 10 );
+
+
+
+/* removes price action hook and then re-adds in new position in hierachy */
+remove_action( 'woocommerce_single_product_summary', 'woocommerce_template_single_price', 10 );
+add_action( 'woocommerce_single_product_summary', 'woocommerce_template_single_price', 6 );
+
+/* add to cart plus minus buttons */
+
 add_action( 'woocommerce_before_add_to_cart_quantity', 'bbloomer_display_quantity_minus' );
 
   
@@ -98,6 +108,7 @@ function bbloomer_add_cart_quantity_plus_minus() {
       </script>
    <?php
 }
+
 /**
  * WooCommerce specific scripts & stylesheets.
  *
