@@ -364,8 +364,8 @@ ul.products li.product .button:hover {
 }
 
 .woocommerce-MyAccount-navigation {
-	background:#594059;
-	color: #f2f2f2;
+	background: #FEF3C7;
+	color: #0d0d0d;
 	text-align:center;
 	border-radius: 10px;
 }
@@ -385,8 +385,8 @@ ul.products li.product .button:hover {
 }
 
 .woocommerce-MyAccount-navigation ul li.is-active {
-	background: #252525;
-	color: #f29544;
+	background: #594059;
+	color: #f2f2f2;
 }
 
 .woocommerce-MyAccount-content {
@@ -395,21 +395,62 @@ ul.products li.product .button:hover {
 	
 }
 
-
-/* Flexbox on WooCommerce archive products */
-.woocommerce .products ul,
-.woocommerce ul.products {
- display: flex;
- flex-flow: row wrap;
+#place_order {
+	background-color: #252525;
+	color: #f29544;
+	padding: 10px;
+	border-radius: 2px;
 }
 
-.woocommerce ul.products li.product,
-.woocommerce-page ul.products li.product {
- display: flex;
- flex-flow: column nowrap;
+.woocommerce-Button {
+	background-color: #252525;
+	color: #f29544;
+	padding: 10px;
+	border-radius: 2px;
 }
 
-.woocommerce ul.products li.product .button {
- margin-top: auto;
- display: table;
+.woocommerce-form-login__submit {
+	background-color: #252525;
+	color: #f29544;
+	padding: 10px;
+	border-radius: 2px;
 }
+
+
+
+.woocommerce-form-row {
+	padding: 10px;
+	margin: 0 auto;
+}
+
+.post-84 h2 {
+	padding: 10px;
+}
+
+.woocommerce-orders-table__cell {
+	border-bottom: 2px solid black;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+
+input[type="text"] {
+	border-radius: 2px !important;
+	background-color: #f2f2f2 !important;
+	border-bottom: 1px solid black !important;
+   }
+input[type="tel"] {
+	border-radius: 2px !important;
+	background-color: #f2f2f2 !important;
+	border-bottom: 1px solid black !important;
+   }
+input[type="email"] {
+	border-radius: 2px !important;
+	background-color: #f2f2f2 !important;
+	border-bottom: 1px solid black !important;
+   }
+input[type="password"] {
+	border-radius: 2px !important;
+	background-color: #f2f2f2 !important;
+	border-bottom: 1px solid black !important;
+   }
