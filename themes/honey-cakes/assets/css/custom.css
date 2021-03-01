@@ -356,13 +356,43 @@ ul.products li.product .button:hover {
 	margin: 0 auto;
 }
 
-.page-content, .entry-content, .entry-summary {
-	display: grid;
-	padding: 20px;
-}
+
+
 
 .tabs .wc-tabs {
 	display: flex;
 }
 
-/*******************/
+.woocommerce-MyAccount-navigation {
+	background:#594059;
+	color: #f2f2f2;
+	width: 20vw;
+	border-radius: 10px;
+}
+
+
+.woocommerce-MyAccount-navigation ul li {
+	margin: 1rem 0;
+	padding: 0.8rem 0.5rem;
+	border-radius: 10px;
+	list-style-type: none;
+}
+.woocommerce-MyAccount-navigation ul li {
+	margin: 1rem 0;
+	padding: 0.8rem 0.5rem;
+	border-radius: 2px;
+	list-style-type: none;
+}
+
+.woocommerce-MyAccount-navigation ul li.is-active {
+	background: #252525;
+	color: #f29544;
+}
+
+.woocommerce-MyAccount-content {
+	background: darkgray;
+	
+}
+
+
+
