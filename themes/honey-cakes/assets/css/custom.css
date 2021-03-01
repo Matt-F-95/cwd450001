@@ -273,20 +273,19 @@ h1 {
 	width: 70vh;
 }
 
-.star-rating {
-	margin: 0 auto;
-}
 
 
-.price {
-	text-align:center;
-	font-weight: bold;
-}
+
 .woocommerce-product-details__short-description {
-	color: red;
+	
 	margin-top: 10px;
 	margin-bottom: 10px;
 }
+.single-product div.product form.cart .quantity {
+	float: none;
+	margin: 0;
+	display: inline-block;
+	}
 
 .product_meta {
 	font-weight: bold;
