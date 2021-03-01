@@ -244,6 +244,20 @@ h1 {
 	
 }
 
+ul.products li.product .button {
+	background: #252525;
+	width: 50%;
+	padding: 10px;
+	text-align:center;
+	border-radius: 1em;
+	
+
+}
+ul.products li.product .button:hover {
+	color: #f2f2f2;
+	
+
+}
 
 
 
