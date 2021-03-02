@@ -182,6 +182,13 @@ a:active {
 		width: 30vw;
 
 	}
+
+	ul.products li.product img {
+		margin: 10px auto;
+	}
+
+	
+	
 }
 
 @media only screen and (max-width: 400px) {
@@ -538,7 +545,11 @@ input[type="password"] {
 	list-style-type: none !important;
 }
 
-
+.orderby {
+	background: #252525;
+	color: #f29544;
+	padding: 10px;
+}
 
 .woocommerce-message {
 	background: #98FB98;
