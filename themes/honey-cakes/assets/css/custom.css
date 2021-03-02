@@ -513,9 +513,35 @@ input[type="password"] {
 	border-radius: 2px;
 }
 
+.coupon label {
+	font-weight: bolder;
+}
+
 .button {
 	background-color: #252525;
 	color: #f29544;
 	padding: 10px;
+	border-radius: 2px;
+}
+
+.woocommerce-error {
+	background: #E35A6E !important;
+	color: #fff;
+	padding: 20px;
+	list-style-type: none;
+	margin: 10px;
+}
+.woocommerce-error li {
+	list-style-type: none !important;
+}
+
+
+
+.woocommerce-message {
+	background: #98FB98;
+	color: #fff;
+	padding: 20px;
+	list-style-type: none;
+	margin: 10px;
 	border-radius: 2px;
 }
