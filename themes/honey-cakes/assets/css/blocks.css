@@ -115,6 +115,7 @@ tr:nth-child(even):hover {
 
 .wp-block-media-text {
 	color: #0d0d0d;
+    border-radius: 10px;
 	font-family: 'Source Sans Pro', sans-serif;
 
 }
@@ -532,6 +533,10 @@ tr:nth-child(even):hover {
 
 .blog .comments-link {
     visibility: hidden;
+}
+
+.comment-text .star-rating {
+    margin: 0 auto;
 }
 
 .blog .logged-in-as {

@@ -171,6 +171,19 @@ a:active {
 	}
 }
 
+@media only screen and (max-width: 600px) {
+	.tabs {
+		flex-direction: column;
+	}
+
+	.tabs .wc-tabs {
+		border-radius: 0.55em;
+		background: lightgray;
+		width: 30vw;
+
+	}
+}
+
 @media only screen and (max-width: 400px) {
 	#forminator-module-68 {
 		width: 100%;
@@ -193,6 +206,9 @@ a:active {
 		margin: 0 auto;
 	}
 }
+
+
+
 
 
 /*******************/
@@ -274,19 +290,6 @@ ul.products li.product .button:hover {
 	display: flex;
 	justify-content: center;
 
-}
-
-@media only screen and (max-width: 600px) {
-	.tabs {
-		flex-direction: column;
-	}
-
-	.tabs .wc-tabs {
-		border-radius: 0.55em;
-		background: lightgray;
-		width: 30vw;
-
-	}
 }
 
 
