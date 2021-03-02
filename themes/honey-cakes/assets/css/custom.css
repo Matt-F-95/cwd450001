@@ -501,3 +501,21 @@ input[type="password"] {
 	background-color: #f2f2f2 !important;
 	border-bottom: 1px solid black !important;
 }
+
+.actions .coupon {
+	margin-top: 2rem;
+}
+
+.coupon button {
+	background-color: #252525;
+	color: #f29544;
+	padding: 10px;
+	border-radius: 2px;
+}
+
+.button {
+	background-color: #252525;
+	color: #f29544;
+	padding: 10px;
+	border-radius: 2px;
+}
