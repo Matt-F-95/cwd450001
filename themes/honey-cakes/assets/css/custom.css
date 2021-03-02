@@ -545,3 +545,8 @@ input[type="password"] {
 	margin: 10px;
 	border-radius: 2px;
 }
+
+ul.products li.product img {
+	border-radius: 1em;
+	box-shadow: 1px 1px 1px #594059;
+}
