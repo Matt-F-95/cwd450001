@@ -429,6 +429,11 @@ ul.products li.product .button:hover {
 	border-radius: 2px;
 }
 
+.woocommerce-Price-amount {
+	color:#f29544;
+	font-weight: bolder;
+}
+
 .submit {
 	background-color: #252525 !important;
 	color: #f29544 !important;
