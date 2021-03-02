@@ -434,6 +434,11 @@ ul.products li.product .button:hover {
 	font-weight: bolder;
 }
 
+.wc-block-grid__product-image img {
+	border-radius: 1em !important;
+}
+
+
 .submit {
 	background-color: #252525 !important;
 	color: #f29544 !important;
