@@ -257,6 +257,18 @@ function wpdocs_custom_excerpt_length( $length ) {
  add_filter( 'excerpt_length', 'wpdocs_custom_excerpt_length', 999 );
   
 
+// adds a subscribe to newsletter optional checkbox
+add_action( 'woocommerce_after_order_notes', 'honeycakes_subscribe_checkout' );
+
+function honeycakes_subscribe_checkout( $checkout ) {
+woocommerce_form_field( 'subscriber', array(
+'type' => 'checkbox',
+//'required' => true,
+'class' => array('custom-field form-row-wide'),
+'label' => ' Subscribe to our newsletter?'
+), $checkout->get_value( 'subscriber' ) );
+}
+
 /**
  * Implement the Custom Header feature.
  */

@@ -42,6 +42,10 @@ remove_action( 'woocommerce_before_single_product_summary', 'woocommerce_show_pr
 remove_action( 'woocommerce_before_shop_loop', 'woocommerce_catalog_ordering', 30 );
 add_action( 'woocommerce_before_shop_loop', 'woocommerce_catalog_ordering', 5 );
 
+/* remove star rating to help keep layout more consistent */
+remove_action( 'woocommerce_after_shop_loop_item_title', 'woocommerce_template_loop_rating', 5 );
+
+
 
 /* removes price action hook and then re-adds in new position in hierachy */
 remove_action( 'woocommerce_single_product_summary', 'woocommerce_template_single_price', 10 );
@@ -65,7 +69,7 @@ function bbloomer_display_quantity_minus() {
 // Note: to place minus @ left and plus @ right replace above add_actions with:
 // add_action( 'woocommerce_before_add_to_cart_quantity', 'bbloomer_display_quantity_minus' );
 // add_action( 'woocommerce_after_add_to_cart_quantity', 'bbloomer_display_quantity_plus' );
-  
+
 // -------------
 // 2. Trigger jQuery script
   
@@ -157,6 +161,8 @@ function honey_cakes_woocommerce_active_body_class( $classes ) {
 	return $classes;
 }
 add_filter( 'body_class', 'honey_cakes_woocommerce_active_body_class' );
+
+
 
 /**
  * Related Products Args.

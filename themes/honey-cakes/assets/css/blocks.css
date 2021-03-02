@@ -463,10 +463,50 @@ tr:nth-child(even):hover {
     visibility: visible;
 }
 
+.single-post .entry-footer {
+    display: none;
+}
+
+.nav-previous {
+    padding: 30px;
+    font-weight: bolder;
+}
+
+.nav-next {
+    padding: 30px;
+    font-weight: bolder;
+}
+
+.single-post #comments {
+    text-align:center;
+    padding: 10px;
+}
+
+.single-post .reply {
+    margin-bottom: 20px;
+}
+.single-post .avatar {
+    margin: 20px auto;
+}
+
+.single-post .wp-post-image {
+    max-width: 70vw;
+    height: auto;
+}
+
+.single-post .entry-title {
+    font-family: cursive !important;
+}
+
 /* blog page styling */
+
+.blog .entry-footer {
+    display: none;
+}
 
 .blog .entry-content {
     width: 70vw;
+    text-align:center;
     margin: 0 auto;
     max-height: 40vh;
 
@@ -526,4 +566,14 @@ tr:nth-child(even):hover {
 .blog .more-link:hover {
     color: #0d0d0d;
 }
+
+.blog .wp-post-image {
+    max-width: 50vw;
+    height: auto;
+}
+
+.blog .entry-title a {
+	font-family: cursive;
+}
+
 /***********************/
