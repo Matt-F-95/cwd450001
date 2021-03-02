@@ -419,12 +419,25 @@ tr:nth-child(even):hover {
     margin: 0 auto;
 }
 
+.comment-respond {
+    display: flex !important;
+    justify-content: center !important;
+    flex-direction: column !important;
+}
+
+.comment-form-rating {
+    margin: 0 auto;
+    text-align: center;
+    
+}
+
 
 
 .single-post .comment-reply-title {
     width: 70vw;
     margin: 0 auto;
     text-align: center;
+    font-weight: bolder;
 }
 
 .single-post .cat-links {
@@ -538,6 +551,8 @@ tr:nth-child(even):hover {
 .comment-text .star-rating {
     margin: 0 auto;
 }
+
+
 
 .blog .logged-in-as {
     width: 70vw;
