@@ -187,6 +187,25 @@ a:active {
 		margin: 10px auto;
 	}
 
+	.orderby {
+		width: 100vw;
+		text-align: center;
+	}
+
+	.woocommerce-result-count {
+		text-align: center;
+		font-weight: bolder;
+	}
+
+	ul.products {
+		text-align: center;
+	}
+
+	ul.products li.product .button {
+		text-align: center;
+		margin: 0 auto;
+	}
+
 	
 	
 }
