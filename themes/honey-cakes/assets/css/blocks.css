@@ -494,6 +494,10 @@ tr:nth-child(even):hover {
     height: auto;
 }
 
+.single-post .entry-title {
+    font-family: cursive !important;
+}
+
 /* blog page styling */
 
 .blog .entry-footer {
@@ -567,4 +571,9 @@ tr:nth-child(even):hover {
     max-width: 50vw;
     height: auto;
 }
+
+.blog .entry-title a {
+	font-family: cursive;
+}
+
 /***********************/
