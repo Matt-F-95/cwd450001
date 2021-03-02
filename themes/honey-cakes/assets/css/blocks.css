@@ -489,6 +489,11 @@ tr:nth-child(even):hover {
     margin: 20px auto;
 }
 
+.single-post .wp-post-image {
+    max-width: 70vw;
+    height: auto;
+}
+
 /* blog page styling */
 
 .blog .entry-footer {
@@ -497,6 +502,7 @@ tr:nth-child(even):hover {
 
 .blog .entry-content {
     width: 70vw;
+    text-align:center;
     margin: 0 auto;
     max-height: 40vh;
 
@@ -555,5 +561,10 @@ tr:nth-child(even):hover {
 
 .blog .more-link:hover {
     color: #0d0d0d;
+}
+
+.blog .wp-post-image {
+    max-width: 50vw;
+    height: auto;
 }
 /***********************/
