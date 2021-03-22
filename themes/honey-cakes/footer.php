@@ -33,7 +33,7 @@
 	</div>
 	</div>
 	<div class="flex b-purple py-5 justify-center text-white">
-	<small>Copyright &copy; 2021 Honey Cakes Bakery. All Rights Reserved.</small>
+	<small>Copyright HoneyCakes Bakery &copy; <?php echo gmdate( 'Y' ); ?> All Rights Reserved.</small>
 	</div>
 </footer>
 

@@ -121,6 +121,15 @@ add_action( 'after_setup_theme', 'honey_cakes_content_width', 0 );
  *
  * @link https://developer.wordpress.org/themes/functionality/sidebars/#registering-a-sidebar
  */
+
+ //example of conditional tag
+if ( is_user_logged_in() ):
+    echo 'Welcome, registered user!';
+else:
+    echo 'Welcome, visitor!';
+endif;	
+
+
 function honey_cakes_widgets_init() {
 	register_sidebar(
 		array(
@@ -251,6 +260,7 @@ function example_add_post_class_to_single_post( $classes ) {
 }
 add_filter( 'post_class', 'example_add_post_class_to_single_post' );
 
+// increases wp excerpt length
 function wpdocs_custom_excerpt_length( $length ) {
 	return 75;
  }
