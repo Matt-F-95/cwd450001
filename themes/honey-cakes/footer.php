@@ -25,17 +25,66 @@ if ( $recipe_query->have_posts() ) {
 	while ( $recipe_query->have_posts() ) {
 		$recipe_query->the_post();
 		?>
-		<div style="margin:0 auto;width:50%;" class="text-center">
-		<h2 class="text-center"><a href="<?php the_permalink(); ?>"><?php the_title();?></a></h2>
-		<?php the_post_thumbnail(); ?>
-		<?php the_excerpt(); ?>
-		<a href="<?php the_permalink() ?>">Read more &raquo;</a>
+		<div class="carousel relative shadow-2xl bg-white">
+	<div class="carousel-inner relative overflow-hidden w-full">
+		<input class="carousel-open" type="radio" id="carousel-1" name="carousel" aria-hidden="true" hidden="" checked="checked">
+		<div class="carousel-item absolute opacity-0" style="height:50vh;">
+			<div class="block h-full w-full bg-purple-200 text-black text-5xl text-center"><h3><a href="<?php the_permalink(); ?>"><?php the_title();?></a></h3>
+			
+			<?php the_excerpt(); ?>
+			<a href="<?php the_permalink() ?>">Read more &raquo;</a>
+			</div>
 		</div>
+		<label for="carousel-3" class="prev control-1 w-10 h-10 ml-2 md:ml-10 absolute cursor-pointer hidden text-3xl font-bold text-black hover:text-white rounded-full bg-white hover:bg-blue-700 leading-tight text-center z-10 inset-y-0 left-0 my-auto">‹</label>
+		<label for="carousel-2" class="next control-1 w-10 h-10 mr-2 md:mr-10 absolute cursor-pointer hidden text-3xl font-bold text-black hover:text-white rounded-full bg-white hover:bg-blue-700 leading-tight text-center z-10 inset-y-0 right-0 my-auto">›</label>
+		<!-- ./slide1 -->
+	
+		<input class="carousel-open" type="radio" id="carousel-2" name="carousel" aria-hidden="true" hidden="">
+		<div class="carousel-item absolute opacity-0" style="height:50vh;">
+			<div class="block h-full w-full bg-purple-200 text-black text-5xl text-center"><h3><a href="<?php the_permalink(); ?>"><?php the_title();?></a></h3>
+			
+			<?php the_excerpt(); ?>
+			<a href="<?php the_permalink() ?>">Read more &raquo;</a></div>
+		</div>
+		<label for="carousel-1" class="prev control-2 w-10 h-10 ml-2 md:ml-10 absolute cursor-pointer hidden text-3xl font-bold text-black hover:text-white rounded-full bg-white hover:bg-blue-700 leading-tight text-center z-10 inset-y-0 left-0 my-auto">‹</label>
+		<label for="carousel-3" class="next control-2 w-10 h-10 mr-2 md:mr-10 absolute cursor-pointer hidden text-3xl font-bold text-black hover:text-white rounded-full bg-white hover:bg-blue-700 leading-tight text-center z-10 inset-y-0 right-0 my-auto">›</label> 
+		<!-- ./slide2 -->
+		
+		<input class="carousel-open" type="radio" id="carousel-3" name="carousel" aria-hidden="true" hidden="">
+		<div class="carousel-item absolute opacity-0" style="height:50vh;">
+			<div class="block h-full w-full bg-purple-200 text-black text-5xl text-center"><h3><a href="<?php the_permalink(); ?>"><?php the_title();?></a></h3>
+		
+			<?php the_excerpt(); ?>
+			<a href="<?php the_permalink() ?>">Read more &raquo;</a></div>
+		</div>
+		<!-- ./slide3 -->
+		<label for="carousel-2" class="prev control-3 w-10 h-10 ml-2 md:ml-10 absolute cursor-pointer hidden text-3xl font-bold text-black hover:text-white rounded-full bg-white hover:bg-blue-700 leading-tight text-center z-10 inset-y-0 left-0 my-auto">‹</label>
+		<label for="carousel-1" class="next control-3 w-10 h-10 mr-2 md:mr-10 absolute cursor-pointer hidden text-3xl font-bold text-black hover:text-white rounded-full bg-white hover:bg-blue-700 leading-tight text-center z-10 inset-y-0 right-0 my-auto">›</label>
+
+		<ol class="carousel-indicators">
+			<li class="inline-block mr-3">
+				<label for="carousel-1" class="carousel-bullet cursor-pointer block text-4xl text-white hover:text-gray-700">•</label>
+			</li>
+			<li class="inline-block mr-3">
+				<label for="carousel-2" class="carousel-bullet cursor-pointer block text-4xl text-white hover:text-gray-700">•</label>
+			</li>
+			<li class="inline-block mr-3">
+				<label for="carousel-3" class="carousel-bullet cursor-pointer block text-4xl text-white hover:text-gray-700">•</label>
+			</li>
+		</ol>
+		
+	</div>
+</div>
+
 		<?php
 	}
 }
 
 ?>
+
+
+
+
 
 
 </div> <!-- pagecontent -->

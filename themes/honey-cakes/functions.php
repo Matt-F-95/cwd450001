@@ -123,11 +123,11 @@ add_action( 'after_setup_theme', 'honey_cakes_content_width', 0 );
  */
 
  //example of conditional tag
-if ( is_user_logged_in() ):
-    echo 'Welcome, registered user!';
-else:
-    echo 'Welcome, visitor!';
-endif;	
+// if ( is_user_logged_in() ):
+//     echo 'Welcome, registered user!';
+// else:
+//     echo 'Welcome, visitor!';
+// endif;	
 
 
 
