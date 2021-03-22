@@ -11,40 +11,31 @@
 
 ?>
 
-<?php 
+<?php
 
-// WP QUERY
-	$args = array(
-		'post_type' => 'post',
-		'post_status' => 'publish',
-		'posts_per_page' => '3'
+$recipe_args = array(
+	'post_type' => 'honeycakes_recipe',
+	'posts_per_page' => 3,
 
-	);
-	
-	$post_query = new WP_Query( $args );
+);
 
-	if ( $post_query->have_posts() ) {
+$recipe_query = new WP_Query( $recipe_args ); 
 
-		while ( $post_query->have_posts() ) {
-			$post_query->the_post();
-			?>
-			
-			<div style="margin:0 auto;width:50%;">
-			
-			<h2><a href="<?php the_permalink(); ?>"><?php the_title();?></a></h2>
-			<?php the_post_thumbnail(); ?>
-			<?php the_excerpt()?>
-			<a href="<?php the_permalink() ?>">Read more &raquo</a>
-			
-			</div>
-			<?php
-		}
+if ( $recipe_query->have_posts() ) {
+	while ( $recipe_query->have_posts() ) {
+		$recipe_query->the_post();
+		?>
+		<div style="margin:0 auto;width:50%;" class="text-center">
+		<h2 class="text-center"><a href="<?php the_permalink(); ?>"><?php the_title();?></a></h2>
+		<?php the_post_thumbnail(); ?>
+		<?php the_excerpt(); ?>
+		<a href="<?php the_permalink() ?>">Read more &raquo;</a>
+		</div>
+		<?php
 	}
-	wp_reset_postdata();
+}
 
-	
-	
-	?>
+?>
 
 
 </div> <!-- pagecontent -->
