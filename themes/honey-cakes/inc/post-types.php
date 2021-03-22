@@ -1,11 +1,7 @@
 <?php 
 /*
-* Registering custom post types
+* Registering and initializing custom post types.
 */
-
-
-
-
 
 
 function honeycakes_review_init() {
