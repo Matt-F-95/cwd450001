@@ -90,7 +90,7 @@ function honeycakes_recipe_init() {
         'show_ui'            => true,
         'show_in_menu'       => true,
         'query_var'          => true,
-        'rewrite'            => array( 'slug' => 'recipe' ),
+        'rewrite'            => array( 'slug' => 'recipes' ),
         'capability_type'    => 'post',
         'has_archive'        => true,
         'hierarchical'       => false,
