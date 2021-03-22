@@ -130,6 +130,8 @@ else:
 endif;	
 
 
+
+
 function honey_cakes_widgets_init() {
 	register_sidebar(
 		array(

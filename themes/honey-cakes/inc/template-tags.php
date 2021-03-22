@@ -119,6 +119,7 @@ if ( ! function_exists( 'honey_cakes_post_thumbnail' ) ) :
 	 * Wraps the post thumbnail in an anchor element on index views, or a div
 	 * element when on single views.
 	 */
+	//example of conditional tag
 	function honey_cakes_post_thumbnail() {
 		if ( post_password_required() || is_attachment() || ! has_post_thumbnail() ) {
 			return;
