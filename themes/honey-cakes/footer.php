@@ -11,78 +11,60 @@
 
 ?>
 
+
+
 <?php
 
 $recipe_args = array(
-	'post_type' => 'honeycakes_recipe',
-	'posts_per_page' => 3,
-
+   'posts_per_page'         => 3,
+   'post_type'              => 'honeycakes_recipe',
+   'update_post_meta_cache' => false,
+   'update_post_term_cache' => false,
 );
-
 $recipe_query = new WP_Query( $recipe_args ); 
 
-if ( $recipe_query->have_posts() ) {
-	while ( $recipe_query->have_posts() ) {
-		$recipe_query->the_post();
-		?>
-		<div class="carousel relative shadow-2xl bg-white">
-	<div class="carousel-inner relative overflow-hidden w-full">
-		<input class="carousel-open" type="radio" id="carousel-1" name="carousel" aria-hidden="true" hidden="" checked="checked">
-		<div class="carousel-item absolute opacity-0" style="height:50vh;">
-			<div class="block h-full w-full bg-yellow-400 bg-opacity-70 text-2xl text-black text-center"><h3><a href="<?php the_permalink(); ?>"><?php the_title();?></a></h3>
-			
-			<?php the_excerpt(); ?>
-			<a href="<?php the_permalink() ?>">Read more &raquo;</a>
-			</div>
-		</div>
-		<label for="carousel-3" class="prev control-1 w-10 h-10 ml-2 md:ml-10 absolute cursor-pointer hidden text-3xl font-bold text-black hover:text-white rounded-full bg-white hover:bg-blue-700 leading-tight text-center z-10 inset-y-0 left-0 my-auto">‹</label>
-		<label for="carousel-2" class="next control-1 w-10 h-10 mr-2 md:mr-10 absolute cursor-pointer hidden text-3xl font-bold text-black hover:text-white rounded-full bg-white hover:bg-blue-700 leading-tight text-center z-10 inset-y-0 right-0 my-auto">›</label>
-		<!-- ./slide1 -->
-	
-		<input class="carousel-open" type="radio" id="carousel-2" name="carousel" aria-hidden="true" hidden="">
-		<div class="carousel-item absolute opacity-0" style="height:50vh;">
-			<div class="block h-full w-full bg-yellow-400 bg-opacity-70 text-black text-2xl text-center"><h3><a href="<?php the_permalink(); ?>"><?php the_title();?></a></h3>
-			
-			<?php the_excerpt(); ?>
-			<a href="<?php the_permalink() ?>">Read more &raquo;</a></div>
-		</div>
-		<label for="carousel-1" class="prev control-2 w-10 h-10 ml-2 md:ml-10 absolute cursor-pointer hidden text-3xl font-bold text-black hover:text-white rounded-full bg-white hover:bg-blue-700 leading-tight text-center z-10 inset-y-0 left-0 my-auto">‹</label>
-		<label for="carousel-3" class="next control-2 w-10 h-10 mr-2 md:mr-10 absolute cursor-pointer hidden text-3xl font-bold text-black hover:text-white rounded-full bg-white hover:bg-blue-700 leading-tight text-center z-10 inset-y-0 right-0 my-auto">›</label> 
-		<!-- ./slide2 -->
-		
-		<input class="carousel-open" type="radio" id="carousel-3" name="carousel" aria-hidden="true" hidden="">
-		<div class="carousel-item absolute opacity-0" style="height:50vh;">
-			<div class="block h-full w-full bg-yellow-400 bg-opacity-70 text-black text-2xl text-center"><h3><a href="<?php the_permalink(); ?>"><?php the_title();?></a></h3>
-		
-			<?php the_excerpt(); ?>
-			<a href="<?php the_permalink() ?>">Read more &raquo;</a></div>
-		</div>
-		<!-- ./slide3 -->
-		<label for="carousel-2" class="prev control-3 w-10 h-10 ml-2 md:ml-10 absolute cursor-pointer hidden text-3xl font-bold text-black hover:text-white rounded-full bg-white hover:bg-blue-700 leading-tight text-center z-10 inset-y-0 left-0 my-auto">‹</label>
-		<label for="carousel-1" class="next control-3 w-10 h-10 mr-2 md:mr-10 absolute cursor-pointer hidden text-3xl font-bold text-black hover:text-white rounded-full bg-white hover:bg-blue-700 leading-tight text-center z-10 inset-y-0 right-0 my-auto">›</label>
-
-		<ol class="carousel-indicators">
-			<li class="inline-block mr-3">
-				<label for="carousel-1" class="carousel-bullet cursor-pointer block text-4xl text-white hover:text-gray-700">•</label>
-			</li>
-			<li class="inline-block mr-3">
-				<label for="carousel-2" class="carousel-bullet cursor-pointer block text-4xl text-white hover:text-gray-700">•</label>
-			</li>
-			<li class="inline-block mr-3">
-				<label for="carousel-3" class="carousel-bullet cursor-pointer block text-4xl text-white hover:text-gray-700">•</label>
-			</li>
-		</ol>
-		
-	</div>
+?>
+<div class="posts-carousel px-5">
+   <?php
+   if ( $recipe_query->have_posts() ) :
+      while ( $recipe_query->have_posts() ) :
+         $recipe_query->the_post();
+         ?>
+         <div class="card">
+            <?php
+            if ( has_post_thumbnail() ) {
+            //    the_post_custom_thumbnail(
+            //       get_the_ID(),
+            //       'featured-thumbnail',
+            //       [
+            //          'sizes' => '(max-width: 350px) 350px, 233px',
+			// 		 'class' => 'w-100',
+            //       ]
+            //    );
+            } else {
+               ?>
+               <img src="https://via.placeholder.com/510x340" class="w-100" alt="Card image cap">
+               <?php
+            }
+            ?>
+            <div class="card-body">
+               <?php the_title( '<h3 class="card-title">', '</h3>' ); ?>
+               <?php the_excerpt(); ?>
+               <a href="<?php echo esc_url( get_the_permalink() ); ?>" class="btn btn-primary">
+                  <?php esc_html_e( 'View More', 'honey_cakes' ); ?>
+               </a>
+            </div>
+         </div>
+      <?php
+      endwhile;
+   endif;
+   wp_reset_postdata();
+   
+   ?>
 </div>
 
-		<?php
-	}
-}
 
-wp_reset_postdata();
 
-?>
 
 
 
