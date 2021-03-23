@@ -29,7 +29,7 @@ if ( $recipe_query->have_posts() ) {
 	<div class="carousel-inner relative overflow-hidden w-full">
 		<input class="carousel-open" type="radio" id="carousel-1" name="carousel" aria-hidden="true" hidden="" checked="checked">
 		<div class="carousel-item absolute opacity-0" style="height:50vh;">
-			<div class="block h-full w-full bg-purple-200 text-black text-5xl text-center"><h3><a href="<?php the_permalink(); ?>"><?php the_title();?></a></h3>
+			<div class="block h-full w-full bg-yellow-400 bg-opacity-70 text-2xl text-black text-center"><h3><a href="<?php the_permalink(); ?>"><?php the_title();?></a></h3>
 			
 			<?php the_excerpt(); ?>
 			<a href="<?php the_permalink() ?>">Read more &raquo;</a>
@@ -41,7 +41,7 @@ if ( $recipe_query->have_posts() ) {
 	
 		<input class="carousel-open" type="radio" id="carousel-2" name="carousel" aria-hidden="true" hidden="">
 		<div class="carousel-item absolute opacity-0" style="height:50vh;">
-			<div class="block h-full w-full bg-purple-200 text-black text-5xl text-center"><h3><a href="<?php the_permalink(); ?>"><?php the_title();?></a></h3>
+			<div class="block h-full w-full bg-yellow-400 bg-opacity-70 text-black text-2xl text-center"><h3><a href="<?php the_permalink(); ?>"><?php the_title();?></a></h3>
 			
 			<?php the_excerpt(); ?>
 			<a href="<?php the_permalink() ?>">Read more &raquo;</a></div>
@@ -52,7 +52,7 @@ if ( $recipe_query->have_posts() ) {
 		
 		<input class="carousel-open" type="radio" id="carousel-3" name="carousel" aria-hidden="true" hidden="">
 		<div class="carousel-item absolute opacity-0" style="height:50vh;">
-			<div class="block h-full w-full bg-purple-200 text-black text-5xl text-center"><h3><a href="<?php the_permalink(); ?>"><?php the_title();?></a></h3>
+			<div class="block h-full w-full bg-yellow-400 bg-opacity-70 text-black text-2xl text-center"><h3><a href="<?php the_permalink(); ?>"><?php the_title();?></a></h3>
 		
 			<?php the_excerpt(); ?>
 			<a href="<?php the_permalink() ?>">Read more &raquo;</a></div>
@@ -79,6 +79,8 @@ if ( $recipe_query->have_posts() ) {
 		<?php
 	}
 }
+
+wp_reset_postdata();
 
 ?>
 
