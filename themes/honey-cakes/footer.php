@@ -33,14 +33,9 @@ $recipe_query = new WP_Query( $recipe_args );
          <div class="card">
             <?php
             if ( has_post_thumbnail() ) {
-            //    the_post_custom_thumbnail(
-            //       get_the_ID(),
-            //       'featured-thumbnail',
-            //       [
-            //          'sizes' => '(max-width: 350px) 350px, 233px',
-			// 		 'class' => 'w-100',
-            //       ]
-            //    );
+				the_post_thumbnail();
+				update_option( 'thumbnail_size_w', 160 );
+				update_option( 'thumbnail_size_h', 160 );
             } else {
                ?>
                <img src="https://via.placeholder.com/510x340" class="w-100" alt="Card image cap">
@@ -51,7 +46,7 @@ $recipe_query = new WP_Query( $recipe_args );
                <?php the_title( '<h3 class="card-title">', '</h3>' ); ?>
                <?php the_excerpt(); ?>
                <a href="<?php echo esc_url( get_the_permalink() ); ?>" class="btn btn-primary">
-                  <?php esc_html_e( 'View More', 'honey_cakes' ); ?>
+                  <?php esc_html_e( 'Read more &raquo;', 'honey_cakes' ); ?>
                </a>
             </div>
          </div>

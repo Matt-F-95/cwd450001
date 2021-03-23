@@ -8,7 +8,7 @@
         initiateCarousel() {
             $('.posts-carousel').slick({
                 autoplay: true,
-                autoplaySpeed: 1000,
+                autoplaySpeed: 5000,
                 slidesToShow: 2,
                 slidesToScroll: 1,
             });
