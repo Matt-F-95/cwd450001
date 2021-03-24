@@ -122,12 +122,21 @@ add_action( 'after_setup_theme', 'honey_cakes_content_width', 0 );
  * @link https://developer.wordpress.org/themes/functionality/sidebars/#registering-a-sidebar
  */
 
- //example of conditional tag
-// if ( is_user_logged_in() ):
-//     echo 'Welcome, registered user!';
-// else:
-//     echo 'Welcome, visitor!';
-// endif;	
+if ( is_user_logged_in() ):
+    
+else:
+    echo '<p class="text-center bg-purple-200 text-black p-2">Welcome, visitor! <a href="https://cwd45001.local/wp-login.php?action=register">Create your account now</a> or <a href="https://cwd45001.local/my-account/">Login</a></p>';
+endif;	
+
+
+        
+  
+if ( is_home()) {
+ 
+echo "Welcome to Our Blog!!";
+ 
+}
+ 
 
 
 
