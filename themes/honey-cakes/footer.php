@@ -15,6 +15,9 @@
 
 <?php
 
+
+
+
 $recipe_args = array(
    'posts_per_page'         => 3,
    'post_type'              => 'honeycakes_recipe',
@@ -57,14 +60,6 @@ $recipe_query = new WP_Query( $recipe_args );
    
    ?>
 </div>
-
-
-
-
-
-
-
-
 
 </div> <!-- pagecontent -->
 </div>

@@ -588,7 +588,7 @@ ul.products li.product img {
 
 
 /* Tailwind Slider CSS */
-
+/* 
 .carousel-open:checked + .carousel-item {
 	position: static;
 	opacity: 100;
@@ -616,5 +616,14 @@ ul.products li.product img {
 #carousel-1:checked ~ .control-1 ~ .carousel-indicators li:nth-child(1) .carousel-bullet,
 #carousel-2:checked ~ .control-2 ~ .carousel-indicators li:nth-child(2) .carousel-bullet,
 #carousel-3:checked ~ .control-3 ~ .carousel-indicators li:nth-child(3) .carousel-bullet {
-	color: #5A4059;  /*Set to match the Tailwind colour you want the active one to be */
+	color: #5A4059;  /*Set to match the Tailwind colour you want the active one to be 
+} */
+
+.slick-track p {
+	color: #0d0d0d !important;
+	width:70%;
+
 }
+
+
+

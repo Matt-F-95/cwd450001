@@ -283,7 +283,7 @@ add_filter( 'post_class', 'example_add_post_class_to_single_post' );
 
 // increases wp excerpt length
 function wpdocs_custom_excerpt_length( $length ) {
-	return 25;
+	return 30;
  }
  add_filter( 'excerpt_length', 'wpdocs_custom_excerpt_length', 999 );
   
@@ -299,6 +299,8 @@ woocommerce_form_field( 'subscriber', array(
 'label' => ' Subscribe to our newsletter?'
 ), $checkout->get_value( 'subscriber' ) );
 }
+
+
 
 /**
  * Implement the Custom Header feature.
