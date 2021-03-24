@@ -45,7 +45,7 @@ $recipe_query = new WP_Query( $recipe_args );
             <div class="card-body">
                <?php the_title( '<h3 class="card-title">', '</h3>' ); ?>
                <?php the_excerpt(); ?>
-               <a href="<?php echo esc_url( get_the_permalink() ); ?>" class="btn btn-primary">
+               <a href="<?php echo esc_url( get_the_permalink() ); ?>" class="">
                   <?php esc_html_e( 'Read more &raquo;', 'honey_cakes' ); ?>
                </a>
             </div>

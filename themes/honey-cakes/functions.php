@@ -283,7 +283,7 @@ add_filter( 'post_class', 'example_add_post_class_to_single_post' );
 
 // increases wp excerpt length
 function wpdocs_custom_excerpt_length( $length ) {
-	return 75;
+	return 25;
  }
  add_filter( 'excerpt_length', 'wpdocs_custom_excerpt_length', 999 );
   
