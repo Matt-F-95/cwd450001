@@ -11,41 +11,57 @@
 
 ?>
 
-<?php 
 
-// WP QUERY
-	$args = array(
-		'post_type' => 'post',
-		'post_status' => 'publish',
-		'posts_per_page' => '3'
 
-	);
-	
-	$post_query = new WP_Query( $args );
+<?php
 
-	if ( $post_query->have_posts() ) {
 
-		while ( $post_query->have_posts() ) {
-			$post_query->the_post();
-			?>
-			
-			<div style="margin:0 auto;width:50%;">
-			
-			<h2><a href="<?php the_permalink(); ?>"><?php the_title();?></a></h2>
-			<?php the_post_thumbnail(); ?>
-			<?php the_excerpt()?>
-			<a href="<?php the_permalink() ?>">Read more &raquo</a>
-			
-			</div>
-			<?php
-		}
-	}
-	wp_reset_postdata();
 
-	
-	
-	?>
 
+$recipe_args = array(
+   'posts_per_page'         => 3,
+   'post_type'              => 'honeycakes_recipe',
+   'update_post_meta_cache' => false,
+   'update_post_term_cache' => false,
+);
+$recipe_query = new WP_Query( $recipe_args ); 
+
+?>
+<h1><?php blogSliderTitle(); ?></h1>
+<div class="posts-carousel px-5">
+
+   <?php
+   if ( $recipe_query->have_posts() ) :
+      while ( $recipe_query->have_posts() ) :
+         $recipe_query->the_post();
+         ?>
+         <div class="card">
+            <?php
+            if ( has_post_thumbnail() ) {
+				the_post_thumbnail();
+				update_option( 'thumbnail_size_w', 160 );
+				update_option( 'thumbnail_size_h', 160 );
+            } else {
+               ?>
+               <img src="https://via.placeholder.com/510x340" class="w-100" alt="Card image cap">
+               <?php
+            }
+            ?>
+            <div class="card-body">
+               <?php the_title( '<h3 class="card-title">', '</h3>' ); ?>
+               <?php the_excerpt(); ?>
+               <a href="<?php echo esc_url( get_the_permalink() ); ?>" class="">
+                  <?php esc_html_e( 'Read more &raquo;', 'honey_cakes' ); ?>
+               </a>
+            </div>
+         </div>
+      <?php
+      endwhile;
+   endif;
+   wp_reset_postdata();
+   
+   ?>
+</div>
 
 </div> <!-- pagecontent -->
 </div>

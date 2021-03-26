@@ -7,6 +7,9 @@
  * @package honeycakes
  */
 
+
+
+
 if ( ! function_exists( 'honey_cakes_posted_on' ) ) :
 	/**
 	 * Prints HTML with meta information for the current post-date/time.

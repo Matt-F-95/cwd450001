@@ -122,16 +122,20 @@ add_action( 'after_setup_theme', 'honey_cakes_content_width', 0 );
  * @link https://developer.wordpress.org/themes/functionality/sidebars/#registering-a-sidebar
  */
 
- //example of conditional tag
+ //check if user is logged in conditional tag
 if ( is_user_logged_in() ):
-    echo 'Welcome, registered user!';
 else:
-    echo 'Welcome, visitor!';
+    echo '<p class="text-center bg-purple-200 text-black p-2">Welcome, visitor! <a href="https://cwd45001.local/wp-login.php?action=register">Create your account now</a> or <a href="https://cwd45001.local/my-account/">Login</a></p>';
 endif;	
 
+        
+// check if user is on home/blog page
+if ( is_home()) {
+echo 'Welcome to Our Blog!!';
+} else {
 
-
-
+}
+ 
 function honey_cakes_widgets_init() {
 	register_sidebar(
 		array(
@@ -156,12 +160,18 @@ function honey_cakes_scripts() {
 	wp_enqueue_style( 'tailwind-style', get_template_directory_uri() . '/assets/css/tailwind.css' );
 	wp_enqueue_style( 'custom-style', get_template_directory_uri() . '/assets/css/custom.css' );
 	wp_enqueue_script( 'honey-cakes-navigation', get_template_directory_uri() . '/js/navigation.js', array(), _S_VERSION, true );
-
+	// wp_enqueue_script('jquery'); 
+	wp_enqueue_script( 'carousel-js', untrailingslashit( get_template_directory_uri() ) . '/assets/src/carousel/index.js', ['jquery', 'slick-js'], filemtime( untrailingslashit( get_template_directory() ) . '/assets/src/carousel/index.js' ), true );
+	wp_enqueue_script( 'slick-js', get_template_directory_uri() . '/assets/src/library/js/slick.js' );
+	wp_enqueue_style( 'slick-css', untrailingslashit( get_template_directory_uri() ) . '/assets/src/library/css/slick.css', [], false, 'all' );
+	wp_enqueue_style( 'slick-theme-css', untrailingslashit( get_template_directory_uri() ) . '/assets/src/library/css/slick-theme.css', ['slick-css'], false, 'all' );
+	
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
 	}
 }
 add_action( 'wp_enqueue_scripts', 'honey_cakes_scripts' );
+
 
 function honeycakes_widgets_init() {
 	
@@ -264,10 +274,27 @@ add_filter( 'post_class', 'example_add_post_class_to_single_post' );
 
 // increases wp excerpt length
 function wpdocs_custom_excerpt_length( $length ) {
-	return 75;
+	return 30;
  }
  add_filter( 'excerpt_length', 'wpdocs_custom_excerpt_length', 999 );
   
+
+function blogSliderTitle() {
+	if( is_home() ) {
+		_e("Check Out More Recipes");
+	} elseif ( is_front_page() ) {
+		_e("Our Recipes");
+	} else {
+		_e("Our Recipes");
+	}
+}
+
+// function homePagetitle() {
+// 	if ( is_front_page() ) {
+
+// 	}
+// }
+
 
 // adds a subscribe to newsletter optional checkbox
 add_action( 'woocommerce_after_order_notes', 'honeycakes_subscribe_checkout' );
@@ -280,6 +307,8 @@ woocommerce_form_field( 'subscriber', array(
 'label' => ' Subscribe to our newsletter?'
 ), $checkout->get_value( 'subscriber' ) );
 }
+
+
 
 /**
  * Implement the Custom Header feature.
