@@ -1,4 +1,6 @@
 
+//*! Init Slider and Settings
+
 ( ($) => {
     class SlickCarousel {
         constructor() {
@@ -10,6 +12,7 @@
                 autoplay: true,
                 autoplaySpeed: 5000,
                 slidesToShow: 2,
+                // *! Add responsiveness to slider.
                 responsive: [
                     {
                       breakpoint: 1024,
@@ -34,9 +37,7 @@
                         slidesToScroll: 1
                       }
                     }
-                    // You can unslick at a given breakpoint now by adding:
-                    // settings: "unslick"
-                    // instead of a settings object
+                    
                   ]
             });
         }
@@ -45,5 +46,6 @@
     new SlickCarousel();
 
 } )( jQuery );
+
 
 

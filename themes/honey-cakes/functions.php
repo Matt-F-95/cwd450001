@@ -122,20 +122,9 @@ add_action( 'after_setup_theme', 'honey_cakes_content_width', 0 );
  * @link https://developer.wordpress.org/themes/functionality/sidebars/#registering-a-sidebar
  */
 
- //check if user is logged in conditional tag
-if ( is_user_logged_in() ):
-else:
-    echo '<p class="text-center bg-purple-200 text-black p-2">Welcome, visitor! <a href="https://cwd45001.local/wp-login.php?action=register">Create your account now</a> or <a href="https://cwd45001.local/my-account/">Login</a></p>';
-endif;	
 
-        
-// check if user is on home/blog page
-if ( is_home()) {
-echo 'Welcome to Our Blog!!';
-} else {
 
-}
- 
+
 function honey_cakes_widgets_init() {
 	register_sidebar(
 		array(
@@ -157,10 +146,12 @@ add_action( 'widgets_init', 'honey_cakes_widgets_init' );
 function honey_cakes_scripts() {
 	wp_enqueue_style( 'honey-cakes-style', get_stylesheet_uri(), array(), _S_VERSION );
 	wp_style_add_data( 'honey-cakes-style', 'rtl', 'replace' );
+	// Tailwind
 	wp_enqueue_style( 'tailwind-style', get_template_directory_uri() . '/assets/css/tailwind.css' );
+	// Custom styles
 	wp_enqueue_style( 'custom-style', get_template_directory_uri() . '/assets/css/custom.css' );
 	wp_enqueue_script( 'honey-cakes-navigation', get_template_directory_uri() . '/js/navigation.js', array(), _S_VERSION, true );
-	// wp_enqueue_script('jquery'); 
+	// Carousel
 	wp_enqueue_script( 'carousel-js', untrailingslashit( get_template_directory_uri() ) . '/assets/src/carousel/index.js', ['jquery', 'slick-js'], filemtime( untrailingslashit( get_template_directory() ) . '/assets/src/carousel/index.js' ), true );
 	wp_enqueue_script( 'slick-js', get_template_directory_uri() . '/assets/src/library/js/slick.js' );
 	wp_enqueue_style( 'slick-css', untrailingslashit( get_template_directory_uri() ) . '/assets/src/library/css/slick.css', [], false, 'all' );
@@ -278,22 +269,25 @@ function wpdocs_custom_excerpt_length( $length ) {
  }
  add_filter( 'excerpt_length', 'wpdocs_custom_excerpt_length', 999 );
   
+//Conditional tags
 
+//Change the title above slider dependent on template
 function blogSliderTitle() {
 	if( is_home() ) {
 		_e("Check Out More Recipes");
 	} elseif ( is_front_page() ) {
-		_e("Our Recipes");
+		_e("Recent Recipes");
 	} else {
-		_e("Our Recipes");
+		_e("Recent Recipes");
 	}
 }
 
-// function homePagetitle() {
-// 	if ( is_front_page() ) {
+ //Check if user is logged in and if not add a message
+ if ( is_user_logged_in() ):
+ else:
+	 echo '<p class="text-center bg-purple-200 text-black p-2">Welcome, visitor! <a href="https://cwd45001.local/wp-login.php?action=register">Create your account now</a> or <a href="https://cwd45001.local/my-account/">Login</a></p>';
+ endif;	
 
-// 	}
-// }
 
 
 // adds a subscribe to newsletter optional checkbox
