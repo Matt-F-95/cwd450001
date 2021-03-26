@@ -122,25 +122,20 @@ add_action( 'after_setup_theme', 'honey_cakes_content_width', 0 );
  * @link https://developer.wordpress.org/themes/functionality/sidebars/#registering-a-sidebar
  */
 
+ //check if user is logged in conditional tag
 if ( is_user_logged_in() ):
-    
 else:
     echo '<p class="text-center bg-purple-200 text-black p-2">Welcome, visitor! <a href="https://cwd45001.local/wp-login.php?action=register">Create your account now</a> or <a href="https://cwd45001.local/my-account/">Login</a></p>';
 endif;	
 
-
         
-  
+// check if user is on home/blog page
 if ( is_home()) {
- 
-echo "Welcome to Our Blog!!";
- 
+echo 'Welcome to Our Blog!!';
+} else {
+
 }
  
-
-
-
-
 function honey_cakes_widgets_init() {
 	register_sidebar(
 		array(
@@ -176,19 +171,6 @@ function honey_cakes_scripts() {
 	}
 }
 add_action( 'wp_enqueue_scripts', 'honey_cakes_scripts' );
-
-/**
- * Enqueue slick slider script and styles
- */
-
-// add_action( 'wp_enqueue_scripts', 'slick_register_styles' );
-// function slick_register_styles() {
-// wp_enqueue_style( 'slick-css', untrailingslashit( get_template_directory_uri() ) . '/assets/src/library/css/slick.css', [], false, 'all' );
-// wp_enqueue_style( 'slick-theme-css', untrailingslashit( get_template_directory_uri() ) . '/assets/src/library/css/slick-theme.css', ['slick-css'], false, 'all' );
-// wp_enqueue_script( 'carousel-js', untrailingslashit( get_template_directory_uri() ) . '/assets/src/carousel/index.js', ['jquery', 'slick-js'], filemtime( untrailingslashit( get_template_directory() ) . '/assets/src/carousel/index.js' ), true );
-
-// }
-
 
 
 function honeycakes_widgets_init() {

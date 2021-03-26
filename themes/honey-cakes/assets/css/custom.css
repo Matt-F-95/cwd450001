@@ -625,5 +625,9 @@ ul.products li.product img {
 
 }
 
+.slick-slide {
+	height: 70% !important;
+}
+
 
 
