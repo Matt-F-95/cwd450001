@@ -279,6 +279,23 @@ function wpdocs_custom_excerpt_length( $length ) {
  add_filter( 'excerpt_length', 'wpdocs_custom_excerpt_length', 999 );
   
 
+function blogSliderTitle() {
+	if( is_home() ) {
+		_e("Check Out More Recipes");
+	} elseif ( is_front_page() ) {
+		_e("Our Recipes");
+	} else {
+		_e("Our Recipes");
+	}
+}
+
+// function homePagetitle() {
+// 	if ( is_front_page() ) {
+
+// 	}
+// }
+
+
 // adds a subscribe to newsletter optional checkbox
 add_action( 'woocommerce_after_order_notes', 'honeycakes_subscribe_checkout' );
 

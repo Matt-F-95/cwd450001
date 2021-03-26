@@ -27,7 +27,9 @@ $recipe_args = array(
 $recipe_query = new WP_Query( $recipe_args ); 
 
 ?>
+<h1><?php blogSliderTitle(); ?></h1>
 <div class="posts-carousel px-5">
+
    <?php
    if ( $recipe_query->have_posts() ) :
       while ( $recipe_query->have_posts() ) :
