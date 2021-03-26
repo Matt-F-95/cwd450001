@@ -33,7 +33,7 @@
 		<?php if( dynamic_sidebar('top_bar_widget_area_2') ) : else : endif; ?>
 		</ul>
 		</div>
-		<div class="site-branding bg-yellow-100 py-10 text-center shadow-2xl shadow-inner">
+		<div class="site-branding bg-yellow-100 py-5 text-center shadow-2xl shadow-inner">
 		
 			<?php
 			the_custom_logo();

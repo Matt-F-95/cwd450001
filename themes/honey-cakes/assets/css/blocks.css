@@ -371,7 +371,7 @@ tr:nth-child(even):hover {
     opacity: 1;
 }
 
-/* single blog post styling */
+/*! single blog post styling */
 
 .entry-meta {
     text-align: center;
@@ -605,4 +605,3 @@ tr:nth-child(even):hover {
     font-family: cursive;
 }
 
-/***********************/

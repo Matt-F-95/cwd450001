@@ -1,16 +1,16 @@
 /***** HONEYCAKES THEME CUSTOM STYLING *****
 *
-*	01 - HOUSEKEEPING
-*	02 - BAKERY COLOUR PALETTE
-*	03 - BLOCK STYLING (MOVED TO BLOCKS.CSS)
-*	04 - WIDGET STYLING
-*	05 - MEDIA QUERIES
-*	06 - WOOCOMMERCE CUSTOM STYLING
+**	01 - HOUSEKEEPING
+**	02 - BAKERY COLOUR PALETTE
+**	03 - BLOCK STYLING (MOVED TO BLOCKS.CSS)
+**	04 - WIDGET STYLING
+**	05 - MEDIA QUERIES
+**	06 - WOOCOMMERCE CUSTOM STYLING
 *
 
 /******************************************/
 
-/* 01 - HOUSEKEEPING */
+/*! 01 - HOUSEKEEPING */
 
 body {
 	background: #f2f2f2;
@@ -42,7 +42,7 @@ h6 {
 	font-size: 1em;
 }
 
-/* 02 - BAKERY COLORS */
+/*! 02 - BAKERY COLORS */
 
 .b-purple {
 	background: #594059;
@@ -84,7 +84,7 @@ h6 {
 	color: #0d0d0d;
 }
 
-/*********************/
+/*! ********************/
 
 .main-navigation a {
 	color: #fff;
@@ -145,7 +145,7 @@ a:active {
 
 
 
-/* 05 - MEDIA QUERIES */
+/*! 05 - MEDIA QUERIES */
 
 @media only screen and (max-width: 800px) {
 	#forminator-module-68 {
@@ -241,7 +241,7 @@ a:active {
 /*******************/
 
 
-/* 06. WOOCOMMERCE CUSTOM STYLING */
+/*! 06. WOOCOMMERCE CUSTOM STYLING */
 
 
 .wc-block-grid__products {
@@ -587,52 +587,20 @@ ul.products li.product img {
 	box-shadow: 1px 1px 1px #594059;
 }
 
-
-/* Tailwind Slider CSS */
-/* 
-.carousel-open:checked + .carousel-item {
-	position: static;
-	opacity: 100;
+.main-navigation ul {
+	justify-content: center;
+	font-size: 1.15em;
 }
-.carousel-item {
-	-webkit-transition: opacity 0.6s ease-out;
-	transition: opacity 0.6s ease-out;
-}
-#carousel-1:checked ~ .control-1,
-#carousel-2:checked ~ .control-2,
-#carousel-3:checked ~ .control-3 {
-	display: block;
-}
-.carousel-indicators {
-	list-style: none;
-	margin: 0;
-	padding: 0;
-	position: absolute;
-	bottom: 2%;
-	left: 0;
-	right: 0;
-	text-align: center;
-	z-index: 10;
-}
-#carousel-1:checked ~ .control-1 ~ .carousel-indicators li:nth-child(1) .carousel-bullet,
-#carousel-2:checked ~ .control-2 ~ .carousel-indicators li:nth-child(2) .carousel-bullet,
-#carousel-3:checked ~ .control-3 ~ .carousel-indicators li:nth-child(3) .carousel-bullet {
-	color: #5A4059;  /*Set to match the Tailwind colour you want the active one to be 
-} */
-
 .slick-track p {
 	color: #0d0d0d !important;
 	width:70%;
 
 }
 
-
-
 .slick-slide {
 	height: 70% !important;
 
 }
-
 
 .slick-slide img {
 	border-radius: 1em;
